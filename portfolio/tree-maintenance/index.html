@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>Tree Maintenance</title>
+
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="//d3js.org/topojson.v1.min.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/maintenanceMap.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <div class="banner">
+                <p id="name">Chloropleth Map Visualization</p>
+                <a href="../../projects.html" id="back">Back</a>
+            </div>
+        </header>
+
+        <main>
+            <h1>311 Tree Maintenance Calls in San Francisco 2015</h1>
+
+            <div id="buttons">
+                  <input name="mode" type="radio" value="All" id="show-all" checked><label for="show-all">All</label>
+                  <input name="mode" type="radio" value="Open" id="show-open"><label for="show-open">Open</label>
+                  <input name="mode" type="radio" value="Closed" id="show-closed"><label for="show-closed">Closed</label>
+                  <input name="mode" type="radio" value="None" id="show-none"><label for="show-none">None</label>
+            </div>
+
+            <svg></svg>
+            <script>init()</script>
+
+            <div class="description">
+                <h2>Author: Rubin Trailor</h2>
+                <hr/>
+                <h2>Description</h2>
+                <p>This visualization is a Choropleth Map detailing 311 Tree Maintenance
+                   calls in San Francisco from 2015. The colors of the area depict the
+                   the total number of reports for that neighborhood. Neighborhoods whose
+                   data wasn't available in the dataset has a grey color. Each circle is a
+                   311 call at its exact location. Every circle is encoded in two colors:
+                   red or blue. Blue circles are calls that have been resolved(closed) and red
+                   circles are calls that weren't resolved(open)–at least within the time span
+                   of the dataset. It's also possible that these calls were closed but
+                   weren't documented. Unfortunately, this cannot be determined from
+                   the dataset. There is a group of radio buttons to toggle the visibility
+                   of these circles. Simply choose whether you want to see all the
+                   circles(default option), only the open calls, only the closed calls,
+                   or none of circles.</p>
+                <hr/>
+                <h2>Findings</h2>
+                <p>The Mission neighborhood and its surrounding neighborhoods seem to
+                   have a high amounts of these calls. After a close analysis of these
+                   calls, it became apparent that most of these calls were reports of
+                   vandalism to the trees. The Mission neighborhood is known infamously
+                   for its high concentration of graffiti, so this might be connection
+                   for the high ammount of calls for that area. This area also has the
+                   highest amount of calls that are still open. Since a lot of graffiti
+                   is kept up in that neighborhood, this might explain why some
+                   "vandalism" on trees might go unresolved.</p>
+                <hr/>
+                <h2>Links</h2>
+                <a href="https://data.sfgov.org/City-Infrastructure/Tree-Maintenance-2015/jzte-ntie">
+                Original Dataset</a>
+                <br/>
+                <a href="https://github.com/usf-cs360-2016/templates-cs360/blob/gh-pages/homework5/Tree_Maintenance_2015.csv">
+                Filtered Dataset</a>
+                <br/>
+                <a href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/SF-Find-Neighborhoods/pty2-tcw4">
+                Neighborhood Boundries Geographical Data</a>
+                <br/><br/>
+                <hr/>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <p>&copy; 2015 Rubin Trailor. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

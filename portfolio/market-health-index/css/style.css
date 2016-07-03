@@ -1,0 +1,119 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+
+  background-color: #FAFAFA;
+  text-align: center;
+}
+
+h1, h2, h3, p, a, ol {
+    color: #777777;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+a {
+
+}
+/*a {
+    background-color: #FEFEFE;
+    border: 2px solid #BBBBBB;
+    padding: 10px 20px;
+
+    font-size: 22px;
+    text-decoration: none;
+
+    display: block;
+}*/
+
+/*a:hover {
+    background-color: #E5E5E5;
+}*/
+
+ol {
+    list-style-position: inside;
+    font-size: 1em;
+    text-align: left;
+}
+
+
+svg {
+    background-color: #FAFAFA;
+    border: 2px solid #CCCCCC;
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rect {
+    border: 2px solid #CCCCCC;
+}
+
+div {
+    width: 35%;
+    padding: 10px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button {
+    background-color: #FEFEFE;
+    border: 2px solid #BBBBBB;
+    padding: 10px 20px;
+
+    font-size: 22px;
+    text-decoration: none;
+
+    display: block;
+}
+
+#button:hover {
+    background-color: #E5E5E5;
+}
+
+#back-button {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#back-button-row {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.axis line {
+    fill: none;
+    stroke: #DDDDDD;
+    stroke-width: 1px;
+}
+
+.axis path {
+    display: none;
+}
+
+.axis text {
+    font-size: 8px;
+    color: "#FF0000";
+}
+
+.frame {
+  fill: none;
+  stroke: #AAAAAA;
+}
+
+#cell text {
+    font-size: 0px;
+}
