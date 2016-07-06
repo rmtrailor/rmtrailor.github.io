@@ -1,165 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
-        <title>Rubin Trailor</title>
-        <meta name="description" content="Rubin Trailor's Website" />
+
+        <!--- Meta -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Rubin Trailor's Portfolio Website" />
         <meta name="author" content="Rubin Trailor" />
 
+        <title>Rubin Trailor</title>
+
         <!-- Style Link -->
+        <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
         <!-- Font Link -->
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    
     </head>
+
     <body>
-        <header>
-            <div class="info">
-                <div class="left">
-                    <h1>Rubin Trailor</h1>
-                    <h3>Undergraduate Student</h3>
-                    <h3>University of San Francisco</h3>
 
-                    <a href="resources/resume-2016.pdf" id="resume-button">Resume <i class="fa fa-download"></i></a> <br />
-                    <a href="mailto:rmtrailor@dons.usfca.edu" id="icon"><i class="fa fa-envelope"></i></a>
-                    <a href="https://github.com/rmtrailor" id="icon"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/rmtrailor" id="icon"><i class="fa fa-linkedin-square"></i></a>
-                    <a href="https://twitter.com/rubintrailor" id="icon"><i class="fa fa-twitter"></i></a>
-                </div>
-                <div class="right">
-                    <img id="me" src="images/me.jpeg" alt="Picture of Rubin Trailor" id="picture" width:"216" height="216"/>
-                </div>
+        <nav>
+            <ul id="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#work">Work</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="opening-container">
+            <div class="opening-text">
+                <h1>Rubin Trailor</h1>
+                <h2>Developer | Student | Gamer</h2>
+
+                <ul class="button-links">
+                    <li><a href="mailto:rmtrailor@dons.usfca.edu" class="icon"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/rmtrailor" class="icon"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rmtrailor" class="icon"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="https://twitter.com/rubintrailor" class="icon"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+
+                <a href="resources/resume-2016.pdf" id="resume-button">Resume <i class="fa fa-download"></i></a>
             </div>
-            <nav id="nav-bar">
-                <a href="index.html">Portfolio</a>
-                <a href="about.html">About</a>
-            </nav>
-        </header>
+        </div>
 
-        <main class="projects-main">
-            <table>
-                <!-- WEB DEV -->
-                <tr>
-                    <th><h2>Web Development</h2></th>
-                </tr>
-                <!-- Search Engine -->
-                <tr id="project-row">
-                    <td id="project-info">
-                        <h3>Search Engine</h3>
-                        <p>
-                            The search engine was a multi-threaded program that used Java, MySQL, JSON,
-                            and HTML/CSS. The program featured an inverted index and TF-IDF scoring to
-                            store and rank searches. The search engine featured user support that saved
-                            user information to a database. Users could: login and logoff, view and delete
-                            search history, private search, and chang their password. This program was a
-                            five-part project for my Software Development class at USF. Therefore, the
-                            repository is not public. If you wish to see the source code, I would be happy
-                            to send it.
-                        </p>
-                    </td>
-                    <td id="project-img">
-                        <img id="project-pic" src="images/pathfinder.png" alt="Picture of Path Finder Search Engine" width="85%"/>
-                    </td>
-                </tr>
+        <main>
+            <atricle>
+                <div class="wrapper">
+                    <section>
+                        <div id="about">
+                            <div class="left-container">
+                                <img src="images/me.jpeg" alt="Picture of Rubin Trailor" id="personal-picture">
+                            </div>
+                            <div class="right-container">
+                                <h3>Hello</h3>
+                                <p>
+                                    My name is Rubin Trailor and I'm an undergraduate
+                                    student at the University of San Francisco. I am pursuing a
+                                    B.Sc. degree in Computer Science and a minor in Mathematics.
+                                    A main interest of mine is using programming as a visual medium
+                                    for information. The fields I feel most passionate about is:
+                                    game engineering, data visualization, and web development.
+                                    However, my interests aren't limited there&#8211;I'm always wanting
+                                    to learn new things, and almost every day I learn something new
+                                    and fascinating in this field.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
 
-                <!-- GAMES -->
-                <tr>
-                    <th><h2>Games</h2></th>
-                </tr>
-                <!-- Tank Game -->
-                <tr id="project-row">
-                    <td id="project-info">
-                        <h3>Tank Game</h3>
-                        <p>
-                            A 3D action game where the player controlled a tank and destroyed other tanks while
-                            trying to avoid being destroyed themselves. Featured collision detection, projectile
-                            management, item pickups, and AI controller for the bot tanks. Created using C++ and
-                            the OGRE graphics engine.
-                        </p>
-                        <!-- <a href="">Link</a> -->
-                    </td>
-                    <td id="project-img">
-                        <img id="project-pic" src="images/tank-game.PNG" alt="Picture of Tank Game" width="85%"/>
-                    </td>
-                </tr>
-                <!-- Jumper -->
-                <tr id="project-row">
-                    <td id="project-info">
-                        <h3>Jumper</h3>
-                        <p>
-                            Jumper is 2D platforming game written in Java. In Jumper you play as a blue
-                            person who must avoid spikes in order to reach the end of each stage. I
-                            created levels using a free software called Tiled, and then saved the created
-                            levels as a JSON files which my program parsed.
-                        </p>
-                        <a href="http://www.mapeditor.org/">Tiled Website</a> <br />
-                        <a href="https://github.com/rmtrailor/Jumper">Link to Repository</a>
-                    </td>
-                    <td id="project-img">
-                        <img id="project-pic" src="images/jumper.png" alt="Picture of Jumper" width="85%"/>
-                    </td>
-                </tr>
-                <!-- VISUALIZATIONS -->
-                <tr>
-                    <th><h2>Visualizations</h2></th>
-                </tr>
-                <!-- BPL -->
-                <tr id="project-row">
-                    <td id="project-info">
-                        <h3>Barclay's Premier League Visual Analysis</h3>
-                        <p>
-                            For this project I visualized the performance of the different teams in the
-                            Barclay's Premier League. The project features four visualizations that
-                            analyze each team against each other based on different factors. This project used a
-                            dataset that gave stats for each match in the 2015-2016 season. JavaScript
-                            and D3.js were used in this project.
-                        </p>
-                        <a href="portfolio/premier-league-analysis/index.html">Link to Visualization</a>
-                    </td>
-                    <td id="project-img">
-                        <img id="project-pic" src="images/bpl-visual.png" alt="Picture of Barclay's Premier League Visual Analysis Visualization" width="85%"/>
-                    </td>
-                </tr>
-                <!-- Tree Maint. -->
-                <tr id="project-row">
-                    <td id="project-info">
-                        <h3>San Francisco 311 Maintenance Call Visualization</h3>
-                        <p>
-                            Visualized San Francisco 311 Tree Maintenance Calls public dataset using
-                            JavaScript and D3.js. Parsed GeoJSON data to create a choropleth map of
-                            San Francisco and placed color-coded symbols on the map for each maintenance
-                            call. Interactive Features: Tooltips when hovering over symbols or neighborhood
-                            areas, and radio buttons to filter the display of symbol groups.
-                        </p>
-                        <a href="portfolio/tree-maintenance/index.html">Link to Visualization</a>
-                    </td>
-                    <td id="project-img">
-                        <img id="project-pic" src="images/tree-visualization.png" alt="Picture of San Francisco Tree Maintenance Visualization" width="85%"/>
-                    </td>
-                </tr>
-                <!-- Market Health Index -->
-                <tr id="project-row">
-                    <td id="project-info">
-                        <h3>Market Health Index Visualization</h3>
-                        <p>
-                            Visualized the Zillow's dataset on the United States Market Health Index using
-                            a scatterplot matrix. Prototypes for this dataset were made using Tableau. The
-                            actual scatterplot matrix was created using JavaScript and the D3.js library.
-                        </p>
-                        <a href="portfolio/market-health-index/index.html">Link to Visualization</a>
-                    </td>
-                    <td id="project-img">
-                        <img id="project-pic" src="images/market-health-index.png" alt="Picture of Market Heatlh Index Visualization" width="85%"/>
-                    </td>
-                </tr>
-            </table>
+                    <section>
+                        <div id="education">
+                            <h3>Education <i class="fa fa-book"></i></h3>
+                            <div class="left-container">
+                                <h4>University of San Francisco, San Francisco, CA</h4>
+                                <p>
+                                    B.Sc. Computer Science Candidate <br>
+                                    Mathematics Minor <br>
+                                    Current GPA: 3.80 <br>
+                                    Expected Graduation: May 2017 <br>
+                                    Dean's List: 2013, 2014, 2015, 2016
+                                </p>
+                            </div>
+                            <div ckass="right-container">
+                                <img src="images/usf-lm.JPG" alt="Picture of University of San Francisco" id="usf-picture">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+
+                        <div id="skills">
+                            
+                            <h3>Skills <i class="fa fa-laptop"></i></h3>
+                            
+                            <div class="left-container">
+                                <img src="images/laptop.jpg" alt="Picture of person typing on a laptop" id="laptop-picture">
+                            </div>
+                            
+                            <div class="right-container">
+                                <h4>Proficient Languages</h4>
+                                <p>Java, Python, Javascript/JQuery, HTML/CSS</p>
+                                
+                                <h4>Familiar Languages</h4>
+                                <p>C, C++</p>
+                                
+                                <h4>Frameworks/Libraries/Tools</h4>
+                                <p>D3.js, MySQL</p>  
+
+                                <h4>Currently Studying</h4>
+                                <p>Node.js, Express, Angular</p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section>
+                        <div id="projects">
+                            <h3>Projects <i class="fa fa-cogs"></i></h3>
+
+                            <div>
+                                <h4>Search Engine</h4>
+                                <p>
+                                    The search engine was a multi-threaded program that used Java, MySQL, JSON,
+                                    and HTML/CSS. The program featured an inverted index and TF-IDF scoring to
+                                    store and rank searches. The search engine featured user support that saved
+                                    user information to a database. Users could: login and logoff, view and delete
+                                    search history, private search, and chang their password. This program was a
+                                    five-part project for my Software Development class at USF. Therefore, the
+                                    repository is not public. If you wish to see the source code, I would be happy
+                                    to send it.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="work">
+                            <h3>Work Experience</h3>
+
+
+                        </div>
+                    </section>
+                </div>
+            </atricle>
         </main>
 
         <footer>
-            <p>
-                &copy; 2015 Rubin Trailor. All rights reserved.
-            </p>
-            <p>
-                Site written by Rubin Trailor
-            </p>
+            <div class="footer">
+                <p>
+                    &copy; 2015 Rubin Trailor. All rights reserved.
+                </p>
+                <p>
+                    All pictures used under public domain.
+                </p>
+            </div>
         </footer>
 
     </body>
