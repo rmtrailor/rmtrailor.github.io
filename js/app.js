@@ -34,8 +34,8 @@ var educationHTML = {
     universityName: "<h2>University of San Francisco, San Francisco, CA</h2>",
     universityDescription: `<p>
                                 B.Sc. Computer Science Candidate <br>
-                                Mathematics Minor <br>
-                                Current GPA: 3.80 <br>
+                                Mathematics Minor<br>
+                                Major GPA: 3.97<br>
                                 Expected Graduation: May 2017 <br>
                                 Dean's List: 2013, 2014, 2015, 2016
                             </p>`,
