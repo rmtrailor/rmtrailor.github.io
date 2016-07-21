@@ -21,239 +21,42 @@
 
     <body>
 
-        <nav>
-            <ul id="nav-bar">
-                <li><a href="#">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#education">Education</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#work">Work</a></li>
+        <div class="menu">
+            <div class="top">
+                <nav>
+                    <ul>
+                        <li id="home-link" class="menu-link">Home</li>
+                        <li id="about-link" class="menu-link">About</li>
+                        <li id="education-link" class="menu-link">Education</li>
+                        <li id="portfolio-link" class="menu-link">Portfolio</li>
+                        <li id="work-link" class="menu-link">Work Experience</li>
+                    </ul>
+                </nav>
+            </div>
 
-            </ul>
-        </nav>
-
-        <div class="opening-container">
-            <div class="opening-text">
-                <h1>Rubin Trailor</h1>
-                <h2>Developer | Student | Gamer</h2>
-
-                <ul class="button-links">
-                    <li><a href="mailto:rmtrailor@dons.usfca.edu" class="icon"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href="https://github.com/rmtrailor" class="icon"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/rmtrailor" class="icon"><i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="https://twitter.com/rubintrailor" class="icon"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-
+            <div class="bottom">
                 <a href="resources/resume-2016.pdf" id="resume-button">Resume <i class="fa fa-download"></i></a>
+                <hr>
+                <p>Code and Design by Rubin Trailor</p>
             </div>
         </div>
 
-        <main>
-            <atricle>
-                <div class="wrapper">
-                    <section>
-                        <div id="about">
-                            <div class="left-container">
-                                <img src="images/me.jpeg" alt="Picture of Rubin Trailor" id="personal-picture">
-                            </div>
-                            <div class="right-container">
-                                <h3>Hello</h3>
-                                <p>
-                                    My name is Rubin Trailor and I'm an undergraduate
-                                    student at the University of San Francisco. I am pursuing a
-                                    B.Sc. degree in Computer Science and a minor in Mathematics.
-                                    A main interest of mine is using programming as a visual medium
-                                    for information. The fields I feel most passionate about is:
-                                    game engineering, data visualization, and web development.
-                                    However, my interests aren't limited there&#8211;I'm always wanting
-                                    to learn new things, and almost every day I learn something new
-                                    and fascinating in this field.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div id="education">
-                            <h3>Education <i class="fa fa-book"></i></h3>
-                            <div class="left-container">
-                                <h4>University of San Francisco, San Francisco, CA</h4>
-                                <p>
-                                    B.Sc. Computer Science Candidate <br>
-                                    Mathematics Minor <br>
-                                    Current GPA: 3.80 <br>
-                                    Expected Graduation: May 2017 <br>
-                                    Dean's List: 2013, 2014, 2015, 2016
-                                </p>
-                            </div>
-                            <div ckass="right-container">
-                                <img src="images/usf-lm.JPG" alt="Picture of University of San Francisco" id="usf-picture">
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-
-                        <div id="skills">
-                            
-                            <h3>Skills <i class="fa fa-laptop"></i></h3>
-                            
-                            <div class="left-container">
-                                <img src="images/laptop.jpg" alt="Picture of person typing on a laptop" id="laptop-picture">
-                            </div>
-                            
-                            <div class="right-container">
-                                <h4>Proficient Languages</h4>
-                                <p>Java, Python, Javascript/JQuery, HTML/CSS</p>
-                                
-                                <h4>Familiar Languages</h4>
-                                <p>C, C++</p>
-                                
-                                <h4>Frameworks/Libraries/Tools</h4>
-                                <p>D3.js, MySQL</p>  
-
-                                <h4>Currently Studying</h4>
-                                <p>Node.js, Express, Angular</p>
-                            </div>
-
-                        </div>
-
-                    </section>
-
-                    <section>
-                        <div id="projects">
-                            <h3>Projects <i class="fa fa-cogs"></i></h3>
-
-                            <div class="project-container">
-                                <div class="project-text">
-                                    <h4>Search Engine</h4>
-                                    <p>
-                                        The search engine was a multi-threaded program that used Java, MySQL, JSON,
-                                        and HTML/CSS. The program featured an inverted index and TF-IDF scoring to
-                                        store and rank searches. The search engine featured user support that saved
-                                        user information to a database. Users could: login and logoff, view and delete
-                                        search history, private search, and chang their password. This program was a
-                                        five-part project for my Software Development class at USF. Therefore, the
-                                        repository is not public. If you wish to see the source code, I would be happy
-                                        to send it.
-                                    </p>
-                                </div>
-                                <div class="project-img">
-                                    <img src="images/pathfinder.png" alt="Picture of Path Finder Search Engine" id="">
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <div class="project-container">
-                                <div class="project-text">
-                                    <h4>Barclay's Premier League Visual Analysis</h4>
-                                    <p>
-                                        For this project I visualized the performance of the different teams in the
-                                        Barclay's Premier League. The project features four visualizations that
-                                        analyze each team against each other based on different factors. This project used a
-                                        dataset that gave stats for each match in the 2015-2016 season. JavaScript
-                                        and D3.js were used in this project.
-                                    </p>
-                                    <a href="portfolio/premier-league-analysis/index.html">Link to Visualization</a>
-                                </div>
-                                <div class="project-img">
-                                    <img src="images/bpl-visual.png" alt="Picture of Barclay's Premier League Visual Analysis Visualization" id="">
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <div class="project-container">
-                                <div class="project-text">
-                                    <h4>San Francisco 311 Maintenance Call Visualization</h4>
-                                    <p>
-                                        Visualized San Francisco 311 Tree Maintenance Calls public dataset using
-                                        JavaScript and D3.js. Parsed GeoJSON data to create a choropleth map of
-                                        San Francisco and placed color-coded symbols on the map for each maintenance
-                                        call. Interactive Features: Tooltips when hovering over symbols or neighborhood
-                                        areas, and radio buttons to filter the display of symbol groups.
-                                    </p>
-                                    <a href="portfolio/tree-maintenance/index.html">Link to Visualization</a>
-                                </div>
-                                <div class="project-img">
-                                    <img src="images/tree-visualization.png" alt="Picture of San Francisco Tree Maintenance Visualization" id="">
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <div class="project-container">
-                                <div class="project-text">
-                                    <h4>Market Health Index Visualization</h4>
-                                    <p>
-                                        Visualized the Zillow's dataset on the United States Market Health Index using
-                                        a scatterplot matrix. Prototypes for this dataset were made using Tableau. The
-                                        actual scatterplot matrix was created using JavaScript and the D3.js library.
-                                    </p>
-                                    <a href="portfolio/market-health-index/index.html">Link to Visualization</a>
-                                </div>
-                                <div class="project-img">
-                                    <img src="images/market-health-index.png" alt="Picture of Market Heatlh Index Visualization" id="">
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <div class="project-container">
-                                <div class="project-text">
-                                    <h4>Tank Game</h4>
-                                    <p>
-                                        A 3D action game where the player controlled a tank and destroyed other tanks while
-                                        trying to avoid being destroyed themselves. Featured collision detection, projectile
-                                        management, item pickups, and AI controller for the bot tanks. Created using C++ and
-                                        the OGRE graphics engine.
-                                    </p>
-                                </div>
-                                <div class="project-img">
-                                    <img src="images/tank-game.PNG" alt="Picture of Tank Game" id="">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div id="work">
-                            <h3>Work Experience</h3>
-
-                            <div class="work-information">
-                                <h4>Teaching Assistant <span>&#8211; University of San Francisco (Aug. 2015 - Present)</span></h4>
-                                <p>
-                                    Grading, holding office hours to help students, and assistance during class periods.
-                                </p>
-                            </div>
-
-                            <div class="work-information">
-                                <h4>Research Assistant <span>&#8211; University of San Francisco (Dec. 2015 - Feb. 2016)</span></h4>
-                                <p> I briefly assisted on a research project that focused on focus and context
-                                    visualizations. I helped develop a tablet app that tested these types of
-                                    visualizations using the Android SDK and then worked on a Desktop version
-                                    using C++.
-                                </p>
-                            </div>
-
-                        </div>
-                    </section>
-                </div>
-            </atricle>
-        </main>
-
-        <footer>
-            <div class="footer">
-                <p>
-                    &copy; 2015 Rubin Trailor. All rights reserved.
-                </p>
-                <p>
-                    All pictures used under public domain.
-                </p>
+        <div class="opening-container">
+            <p class="icon open hidden"><i class="fa fa-bars"></i> Menu</p>
+            <div class="opening-text hidden">
+                <h1>Rubin Trailor</h1>
+                <h2>Developer | Student | Gamer</h2>
+                <ul class="button-links">
+                    <li><a href="mailto:rmtrailor@dons.usfca.edu"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/rmtrailor"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rmtrailor"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="https://twitter.com/rubintrailor"><i class="fa fa-twitter"></i></a></li>
+                </ul>
             </div>
-        </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="js/app.js"></script>
 
     </body>
 </html>
