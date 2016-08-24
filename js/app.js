@@ -127,7 +127,7 @@ var workHTML = {
 /**
  * Replaces the currently viewed html content to fit the context of the side menu selection
  * @param  subject          The subject of the material to be placed
- * @return                  nothing
+ * @return                        nothing
  */
 var replaceContent = function(subject) {
     $('.opening-text').empty();

@@ -50,14 +50,11 @@ b {
  * Opening Style *
  *****************/
 .opening {
-    margin 0%;
+    margin: 0%;
     text-align: left;
     background-image: url("../images/bpl_bkgd_scaled.jpg");
-    background-size: auto;
+    overflow: auto;
     background-position: center;
-    height: 674px;
-    /*width: 1380px;*/
-    width: 1280px;
 }
 
 .opening h1 {
