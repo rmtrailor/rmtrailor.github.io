@@ -21,11 +21,15 @@ var aboutHTML = {
         student at the University of San Francisco. I am pursuing a
         B.Sc. degree in Computer Science and a minor in Mathematics.
         A main interest of mine is using programming as a visual medium
-        for information. The fields I feel most passionate about is:
-        game engineering, data visualization, and web development.
+        for information. The fields I feel most passionate about is: data visualization and web development.
         However, my interests aren't limited there&#8211;I'm always wanting
         to learn new things, and almost every day I learn something new
-        and fascinating in this field.</p>`
+        and fascinating in this field.
+        <br><br>
+        I love playing video games, reading comics, and sipping coffee & tea. If I'm not coding 
+        or working on course work, you can probably catch me playing Hearthstone or reading
+        the latest Batman release with a mug by my side.
+        </p>`
 };
 
 var educationHTML = {
