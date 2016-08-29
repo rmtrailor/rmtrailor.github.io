@@ -97,7 +97,10 @@ var portfolioHTML = {
                         trying to avoid being destroyed themselves. Featured collision detection, projectile
                         management, item pickups, and AI controller for the bot tanks. Created using C++ and
                         the OGRE graphics engine.`,
-            img: `<img src="images/tank-game.PNG" alt="Picture of Tank Game">`
+            img: `<img src="images/tank-game.PNG" alt="Picture of Tank Game">`,
+            links: [
+                '<a href="https://github.com/rmtrailor/Tank-Game">Link to Repository</a>'
+            ]
         }
     }
 };
