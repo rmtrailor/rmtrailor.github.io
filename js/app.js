@@ -66,7 +66,8 @@ var portfolioHTML = {
                         and D3.js were used in this project.`,
             img: `<img src="images/bpl-visual.png" alt="Picture of Barclay's Premier League Visual Analysis Visualization">`,
             links: [
-                '<a href="portfolio/premier-league-analysis/index.html">Link to Visualization</a>'
+                '<a href="portfolio/premier-league-analysis/index.html">Link to Visualization</a>',
+                '<a href="https://github.com/rmtrailor/Premier-League-Visualization">Link to Repository</a>'
             ]
         },
         sfMaintenance: {
@@ -78,7 +79,8 @@ var portfolioHTML = {
                         areas, and radio buttons to filter the display of symbol groups.`,
             img: `<img src="images/tree-visualization.png" alt="Picture of San Francisco Tree Maintenance Visualization">`,
             links: [
-                '<a href="portfolio/tree-maintenance/index.html">Link to Visualization</a>'
+                '<a href="portfolio/tree-maintenance/index.html">Link to Visualization</a>',
+                '<a href="https://github.com/rmtrailor/SF-Tree-Maintenance-Calls-Visualization">Link to Repository</a>'
             ]
         },
         marketHealthIndex: {
@@ -88,7 +90,8 @@ var portfolioHTML = {
                         actual scatterplot matrix was created using JavaScript and the D3.js library.`,
             img: `<img src="images/market-health-index.png" alt="Picture of Market Heatlh Index Visualization">`,
             links: [
-                '<a href="portfolio/market-health-index/index.html">Link to Visualization</a>'
+                '<a href="portfolio/market-health-index/index.html">Link to Visualization</a>',
+                '<a href="https://github.com/rmtrailor/Market-Health-Index-Visualization">Link to Repository</a>'
             ]
         },
         tankGame: {
