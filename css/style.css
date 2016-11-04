@@ -111,8 +111,8 @@ p {
 /* For mobile */
 @media only screen and (max-width: 768px) {
     .icon {
-        border: 5px solid #000;
-        background: #000;
+        border: 5px solid #222;
+        background: #222;
         /* border-radius: 150%; */
     }
 
