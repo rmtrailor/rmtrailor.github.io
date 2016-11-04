@@ -20,6 +20,7 @@ h1 {
     padding: 1%;
 }
 
+
 h2 {
     font-size: 250%;
     padding: 1%
@@ -38,6 +39,39 @@ h4 {
 p {
     font-size: 115%;
     line-height: 100%;
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    h1 {
+        /* font-size: 410%; */
+        font-size: 250%;
+        padding: 1%;
+    }
+
+    h2 {
+        /* font-size: 250%; */
+        font-size: 150%;
+        padding: 1%
+    }
+
+    h3 {
+        /* font-size: 250%; */
+        font-size: 150%;
+        margin: 1.5%;
+        margin-bottom: 2%;
+    }
+
+    h4 {
+        /* font-size: 150%; */
+        font-size: 115%;
+    }
+
+    p {
+        /* font-size: 115%; */
+        font-size: 100%;
+        line-height: 100%;
+    }
 }
 
 #nav-bar {
@@ -66,12 +100,19 @@ p {
     font-size: 250%;
     text-align: left;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 3%;
     color: #FFF;
     text-shadow: 1px 1px 1px #111;
     position: fixed;
     transition: color .2s ease-in-out;
     transition: font-size 0.2s ease-in-out;
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .closed {
+        left: 80%;
+    }
 }
 
 .menu {
@@ -116,6 +157,23 @@ p {
     text-align: center;
 }
 
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .menu .bottom {
+        margin-top: 75%;
+    }
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .menu {
+        font-size: 160%;
+        left: -100%;
+        position: fixed;
+        width: 100%;
+    }
+}
+
 #resume-button {
     text-align: center;
     color: #FFF;
@@ -135,6 +193,21 @@ p {
 .opening-text {
     padding-top: 15%;
     text-shadow: 1px 1px 5px #000;
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .opening-text {
+        padding-top: 50%;
+    }
+
+    .opening-text h1 {
+        font-size: 275%;
+    }
+
+    .opening-text h2 {
+        font-size: 175%;
+    }
 }
 
 .opening-text h1 {
@@ -175,6 +248,17 @@ p {
     margin: 1% 20%;
     padding: 2%;
     line-height: 150%;
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .bio {
+        margin: 1% 5%;
+    }
+
+    .bio p {
+        font-size: 100%;
+    }
 }
 
 .inner-container {
@@ -224,6 +308,14 @@ p {
     font-size: 115%;
 }
 
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .project-container img {
+        text-align: center;
+        /* margin-left: 1% */
+    }
+}
+
 .inner-container hr {
     margin-bottom: 4%;
 }
@@ -252,12 +344,38 @@ p {
     margin-bottom: 2%;
 }
 
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .work-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .work-container h2 {
+        font-size: 90%;
+        line-height: 115%;
+    }
+
+    .work-container p {
+        font-size: 80%;
+    }
+}
+
 .left-container {
     float: left;
     text-align: left;
     margin: 3% 20%;
     margin-left: 10%;
     width: 40%;
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .left-container {
+        text-align: center;
+        margin: 3% 5%;
+        width: 100%;
+    }
 }
 
 .left-container h2 {
@@ -280,4 +398,32 @@ p {
     border: 2px solid #FFF;
     border-radius: 15px;
     padding: 0;
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .inner-container .right-container {
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .inner-container .left-container {
+        width: 100%;
+    }
+
+    .inner-container .left-container h2 {
+        padding-left: 0;
+        font-size: 90%;
+    }
+
+    .inner-container .left-container p {
+        padding-left: 0;
+        font-size: 85%;
+    }
+
+    #usf-picture {
+        width: 80%;
+        height: 80%;
+        border:  1px solid #FFF;
+    }
 }

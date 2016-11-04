@@ -4,7 +4,7 @@
 
 var homeHTML = {
     h1: "<h1>Rubin Trailor</h1>",
-    h2: "<h2>Developer | Student | Gamer</h2>",
+    h2: "<h2>Developer | Student</h2>",
     ulOpen: '<ul class="button-links">',
     li: {
         one: '<li><a href="mailto:rmtrailor@dons.usfca.edu"><i class="fa fa-envelope"></i></a></li>',
@@ -25,10 +25,6 @@ var aboutHTML = {
         However, my interests aren't limited there&#8211;I'm always wanting
         to learn new things, and almost every day I learn something new
         and fascinating in this field.
-        <br><br>
-        I love playing video games, reading comics, and sipping coffee & tea. If I'm not coding 
-        or working on course work, you can probably catch me playing Hearthstone or reading
-        the latest Batman release with a mug by my side.
         </p>`
 };
 
@@ -264,13 +260,16 @@ function slideMenu(direction, time) {
         removingIcon = 'fa-bars';
         addingIcon = 'fa-close';
         menuLeft = '0%';
-        containerLeft = '20%';
+        // containerLeft = '20%';
+        containerLeft = parseInt($('.menu').css('width'));
     } else {
         removingClass = 'closed';
         addingClass = 'open';
         removingIcon = 'fa-close';
         addingIcon = 'fa-bars';
-        menuLeft = '-20%';
+        // menuLeft = '-20%';
+        menuLeft = -1 * parseInt($('.menu').css('width'));
+        console.log(menuLeft);
         containerLeft = '0%';
     }
 
