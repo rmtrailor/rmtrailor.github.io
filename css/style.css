@@ -198,11 +198,15 @@ p {
 /* For mobile */
 @media only screen and (max-width: 768px) {
     .opening-text {
+        padding-top: 20%;
+    }
+
+    .home {
         padding-top: 50%;
     }
 
     .opening-text h1 {
-        font-size: 275%;
+        font-size: 285%;
     }
 
     .opening-text h2 {
@@ -275,6 +279,13 @@ p {
     margin: 1% 5%;
 }
 
+/* For mobile */
+@media only screen and (max-width: 768px) {
+    .project-container {
+        margin-bottom: 10%;
+    }
+}
+
 .project-container h2 {
     font-size: 135%;
     padding-left: 0;
@@ -314,6 +325,11 @@ p {
         text-align: center;
         /* margin-left: 1% */
     }
+
+    .inner-container h1 {
+        font-size: 200%;
+        margin-bottom: 5%;
+    }
 }
 
 .inner-container hr {
@@ -349,6 +365,11 @@ p {
     .work-container {
         margin-left: 2%;
         margin-right: 2%;
+        margin-bottom: 5%;
+    }
+
+    .work-container h1 {
+        font-size: 100%;
     }
 
     .work-container h2 {
@@ -425,5 +446,9 @@ p {
         width: 80%;
         height: 80%;
         border:  1px solid #FFF;
+    }
+
+    .education .left-container {
+        text-align: left;
     }
 }

@@ -134,8 +134,8 @@ var workHTML = {
  */
 var replaceContent = function(subject) {
     $('.opening-text').empty();
-
-    switch (subject) {
+    $('.opening-text').removeClass('home');
+    switch (subject) {  
         case 'home':
             var $h1 = $(homeHTML.h1);
             var $h2 = $(homeHTML.h2);
@@ -145,6 +145,7 @@ var replaceContent = function(subject) {
             $('.opening-text').append($h1);
             $('.opening-text').append($h2);
             $('.opening-text').append($ul);
+            $('.opening-text').addClass('home');
 
             break;
 
@@ -161,7 +162,7 @@ var replaceContent = function(subject) {
             break;
 
         case 'education':
-            var $div = $('<div></div>').addClass('inner-container');
+            var $div = $('<div></div>').addClass('inner-container').addClass('education');
             var $h1 = $(educationHTML.h1);
             var $leftContainer = $(educationHTML.leftContainer).addClass('left-container');
             var $universityName = $(educationHTML.universityName);
