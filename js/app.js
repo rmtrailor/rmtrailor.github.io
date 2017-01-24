@@ -116,7 +116,7 @@ var data = {
             teachingAssistant: {
                 title: 'Teaching Assistant',
                 location: 'University of San Francisco',
-                duration: 'Aug. 2015 - Present',
+                duration: 'Aug. 2015 - Dec. 2016',
                 description: `Grading, holding office hours to help students, and assistance during class periods.
                             Tutored Java and Python`
             },
@@ -324,7 +324,7 @@ var main = function() {
      */
 
     $('.menu ul li').mouseover(function() {
-        $(this).css({ "color": "#FF7562" });
+        $(this).css({ "color": "#4582EC" });
     });
 
     $('.menu ul li').mouseout(function() {
@@ -340,7 +340,7 @@ var main = function() {
     })
 
     $('#resume-button').mouseover(function() {
-        $(this).css({ "color": "#FF7562" });
+        $(this).css({ "color": "#4582EC" });
     })
 
     $('#resume-button').mouseout(function() {
