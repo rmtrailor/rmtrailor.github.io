@@ -455,6 +455,10 @@ p {
         margin-left: 0%;
     }
 
+    .right-container hr {
+        margin-left: 7.5%;
+    }
+
     .inner-container .left-container {
         width: 100%;
     }
