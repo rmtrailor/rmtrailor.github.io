@@ -2,133 +2,143 @@
  * Author: Rubin Trailor
  */
 
-var homeHTML = {
-    h1: "<h1>Rubin Trailor</h1>",
-    h2: "<h2>Developer | Student</h2>",
-    ulOpen: '<ul class="button-links">',
-    li: {
-        one: '<li><a href="mailto:rmtrailor@dons.usfca.edu"><i class="fa fa-envelope"></i></a></li>',
-        two: '<li><a href="https://github.com/rmtrailor"><i class="fa fa-github"></i></a></li>',
-        three: '<li><a href="https://www.linkedin.com/in/rmtrailor"><i class="fa fa-linkedin-square"></i></a></li>',
-        four: '<li><a href="https://twitter.com/rubintrailor"><i class="fa fa-twitter"></i></a></li>'
+var data = {
+    homeHTML: {
+        h1: "<h1>Rubin Trailor</h1>",
+        h2: "<h2>Developer | Student</h2>",
+        ulOpen: '<ul class="button-links">',
+        li: {
+            one: '<li><a href="mailto:contact@rubintrailor.com"><i class="fa fa-envelope"></i></a></li>',
+            two: '<li><a href="https://github.com/rmtrailor"><i class="fa fa-github"></i></a></li>',
+            three: '<li><a href="https://www.linkedin.com/in/rmtrailor"><i class="fa fa-linkedin-square"></i></a></li>',
+        },
+        ulClose: "</ul>",
     },
-    ulClose: "</ul>",
-};
-
-var aboutHTML = {
-    h1: "<h1>Hello</h1>",
-    bio: `<p>My name is Rubin Trailor and I'm an undergraduate
-        student at the University of San Francisco. I am pursuing a
-        B.Sc. degree in Computer Science and a minor in Mathematics.
-        A main interest of mine is using programming as a visual medium
-        for information. The fields I feel most passionate about is: data visualization and web development.
-        However, my interests aren't limited there&#8211;I'm always wanting
-        to learn new things, and almost every day I learn something new
-        and fascinating in this field.
-        </p>`
-};
-
-var educationHTML = {
-    h1: '<h1>Education</h1>',
-    leftContainer: "<div class=\"left-container\"></div>",
-    universityName: "<h2>University of San Francisco, San Francisco, CA</h2>",
-    universityDescription: `<p>
-                                B.Sc. Computer Science Candidate <br>
-                                Mathematics Minor<br>
-                                Major GPA: 3.97<br>
-                                Expected Graduation: May 2017 <br>
-                                Dean's List: 2013, 2014, 2015, 2016
-                            </p>`,
-    rightContainer: "<div class=\"right-container\"></div>",
-    universityImage: `<img src="images/usf-lm.JPG" alt="Picture of University of San Francisco" id="usf-picture">`
-};
-
-var portfolioHTML = {
-    h1: '<h1>Portfolio</h1>',
-    projects: {
-        searchEngine: {
-            title: 'Search Engine',
-            description: `The search engine was built using a Java backend. The program featured an inverted index and TF-IDF scoring to
-                        store and rank searches. The search engine featured user support that saved
-                        user information to a database. Users could: login and logoff, view and delete
-                        search history, private search, and change their password. This program was a
-                        five-part project for my Software Development class at USF. Therefore, the
-                        repository is not public. If you wish to see the source code, I would be happy
-                        to send it.`,
-            img: `<img src="images/pathfinder.png" alt="Picture of Path Finder Search Engine">`
-        },
-        bplVisual: {
-            title: 'Barclay\'s Premier League Visual Analysis',
-            description: `For this project I visualized the performance of the different teams in the
-                        Barclay's Premier League. The project features four visualizations that
-                        analyze each team against each other based on different factors. This project used a
-                        dataset that gave stats for each match in the 2015-2016 season. JavaScript
-                        and D3.js were used in this project.`,
-            img: `<img src="images/bpl-visual.png" alt="Picture of Barclay's Premier League Visual Analysis Visualization">`,
-            links: [
-                '<a href="portfolio/premier-league-analysis/index.html">Link to Visualization</a>',
-                '<a href="https://github.com/rmtrailor/Premier-League-Visualization">Link to Repository</a>'
-            ]
-        },
-        sfMaintenance: {
-            title: 'San Francisco 311 Maintenance Call Visualization',
-            description: `Visualized San Francisco 311 Tree Maintenance Calls public dataset using
-                        JavaScript and D3.js. Parsed GeoJSON data to create a choropleth map of
-                        San Francisco and placed color-coded symbols on the map for each maintenance
-                        call. Interactive Features: Tooltips when hovering over symbols or neighborhood
-                        areas, and radio buttons to filter the display of symbol groups.`,
-            img: `<img src="images/tree-visualization.png" alt="Picture of San Francisco Tree Maintenance Visualization">`,
-            links: [
-                '<a href="portfolio/tree-maintenance/index.html">Link to Visualization</a>',
-                '<a href="https://github.com/rmtrailor/SF-Tree-Maintenance-Calls-Visualization">Link to Repository</a>'
-            ]
-        },
-        marketHealthIndex: {
-            title: 'Market Health Index Visualization',
-            description: `Visualized the Zillow's dataset on the United States Market Health Index using
-                        a scatterplot matrix. Prototypes for this dataset were made using Tableau. The
-                        actual scatterplot matrix was created using JavaScript and the D3.js library.`,
-            img: `<img src="images/market-health-index.png" alt="Picture of Market Heatlh Index Visualization">`,
-            links: [
-                '<a href="portfolio/market-health-index/index.html">Link to Visualization</a>',
-                '<a href="https://github.com/rmtrailor/Market-Health-Index-Visualization">Link to Repository</a>'
-            ]
-        },
-        tankGame: {
-            title: 'Tank Game',
-            description: `A 3D action game where the player controlled a tank and destroyed other tanks while
-                        trying to avoid being destroyed themselves. Featured collision detection, projectile
-                        management, item pickups, and AI controller for the bot tanks. Created using C++ and
-                        the OGRE graphics engine.`,
-            img: `<img src="images/tank-game.PNG" alt="Picture of Tank Game">`,
-            links: [
-                '<a href="https://github.com/rmtrailor/Tank-Game">Link to Repository</a>'
-            ]
+    aboutHTML: {
+        h1: "<h1>Hello</h1>",
+        bio: `<p>My name is Rubin Trailor and I'm an undergraduate
+            student at the University of San Francisco. I am pursuing a
+            B.Sc. degree in Computer Science and a minor in Mathematics.
+            A main interest of mine is using programming as a visual medium
+            for information. The fields I feel most passionate about is: data visualization and web development.
+            However, my interests aren't limited there &#8211; I'm always wanting
+            to learn new things, and almost every day I learn something new
+            and fascinating in this field.
+            </p>`
+    },
+    educationHTML: {
+        h1: '<h1>Education</h1>',
+        leftContainer: "<div class=\"left-container\"></div>",
+        universityName: "<h2>University of San Francisco, San Francisco, CA</h2>",
+        universityDescription: `<p>
+                                    B.Sc. Computer Science Candidate <br>
+                                    Mathematics Minor<br>
+                                    Major GPA: 3.91<br>
+                                    Expected Graduation: May 2017 <br>
+                                    Dean's List: 2013, 2014, 2015, 2016
+                                </p>`,
+        rightContainer: "<div class=\"right-container\"></div>",
+        universityImage: `<img src="images/usf-lm.JPG" alt="Picture of University of San Francisco" id="usf-picture">`
+    },
+    portfolioHTML: {
+        h1: '<h1>Portfolio</h1>',
+        projects: {
+            searchEngine: {
+                title: 'Search Engine',
+                description: `The search engine was built using a Java backend. The program featured an inverted index and TF-IDF scoring to
+                            store and rank searches. The search engine featured user support that saved
+                            user information to a database. Users could: login and logoff, view and delete
+                            search history, private search, and change their password. This program was a
+                            five-part project for my Software Development class at USF. Therefore, the
+                            repository is not public. If you wish to see the source code, I would be happy
+                            to send it.`,
+                img: `<img src="images/pathfinder.png" alt="Picture of Path Finder Search Engine">`
+            },
+            bplVisual: {
+                title: 'Barclay\'s Premier League Visual Analysis',
+                description: `For this project I visualized the performance of the different teams in the
+                            Barclay's Premier League. The project features four visualizations that
+                            analyze each team against each other based on different factors. This project used a
+                            dataset that gave stats for each match in the 2015-2016 season. JavaScript
+                            and D3.js were used in this project.`,
+                img: `<img src="images/bpl-visual.png" alt="Picture of Barclay's Premier League Visual Analysis Visualization">`,
+                links: [
+                    '<a href="portfolio/premier-league-analysis/index.html">Link to Visualization</a>',
+                    '<a href="https://github.com/rmtrailor/Premier-League-Visualization">Link to Repository</a>'
+                ]
+            },
+            sfMaintenance: {
+                title: 'San Francisco 311 Maintenance Call Visualization',
+                description: `Visualized San Francisco 311 Tree Maintenance Calls public dataset using
+                            JavaScript and D3.js. Parsed GeoJSON data to create a choropleth map of
+                            San Francisco and placed color-coded symbols on the map for each maintenance
+                            call. Interactive Features: Tooltips when hovering over symbols or neighborhood
+                            areas, and radio buttons to filter the display of symbol groups.`,
+                img: `<img src="images/tree-visualization.png" alt="Picture of San Francisco Tree Maintenance Visualization">`,
+                links: [
+                    '<a href="portfolio/tree-maintenance/index.html">Link to Visualization</a>',
+                    '<a href="https://github.com/rmtrailor/SF-Tree-Maintenance-Calls-Visualization">Link to Repository</a>'
+                ]
+            },
+            marketHealthIndex: {
+                title: 'Market Health Index Visualization',
+                description: `Visualized the Zillow's dataset on the United States Market Health Index using
+                            a scatterplot matrix. Prototypes for this dataset were made using Tableau. The
+                            actual scatterplot matrix was created using JavaScript and the D3.js library.`,
+                img: `<img src="images/market-health-index.png" alt="Picture of Market Heatlh Index Visualization">`,
+                links: [
+                    '<a href="portfolio/market-health-index/index.html">Link to Visualization</a>',
+                    '<a href="https://github.com/rmtrailor/Market-Health-Index-Visualization">Link to Repository</a>'
+                ]
+            },
+            tankGame: {
+                title: 'Tank Game',
+                description: `A 3D action game where the player controlled a tank and destroyed other tanks while
+                            trying to avoid being destroyed themselves. Featured collision detection, projectile
+                            management, item pickups, and AI controller for the bot tanks. Created using C++ and
+                            the OGRE graphics engine.`,
+                img: `<img src="images/tank-game.PNG" alt="Picture of Tank Game">`,
+                links: [
+                    '<a href="https://github.com/rmtrailor/Tank-Game">Link to Repository</a>'
+                ]
+            }
         }
-    }
+    },
+    workHTML: {
+        h1: '<h1>Work Experience</h1>',
+        listings: {
+            internship: {
+                title: 'Software Engineer Intern',
+                location: 'CA Technologies',
+                duration: 'Dec. 2016 - Present',
+                description: 'Worked on the frontend side of a web application using React and Redux. Work was focused on communication implementations with the backend of the application.'
+            },
+            teachingAssistant: {
+                title: 'Teaching Assistant',
+                location: 'University of San Francisco',
+                duration: 'Aug. 2015 - Present',
+                description: `Grading, holding office hours to help students, and assistance during class periods.
+                            Tutored Java and Python`
+            },
+            researchAssistant: {
+                title: 'Research Assistant',
+                location: 'University of San Francisco',
+                duration: 'Dec. 2015 - Feb. 2016',
+                description: `I assisted on a research project that focused on focus and context
+                            visualizations. I helped develop a tablet app that tested these types of
+                            visualizations using the Android SDK and then worked on a Desktop version
+                            using C++.`
+            }
+        }
+    },
 };
 
-var workHTML = {
-    h1: '<h1>Work Experience</h1>',
-    listings: {
-        teachingAssistant: {
-            title: 'Teaching Assistant',
-            location: 'University of San Francisco',
-            duration: 'Aug. 2015 - Present',
-            description: `Grading, holding office hours to help students, and assistance during class periods.
-                        Tutored Java and Python`
-        },
-        researchAssistant: {
-            title: 'Research Assistant',
-            location: 'University of San Francisco',
-            duration: 'Dec. 2015 - Feb. 2016',
-            description: `I assisted on a research project that focused on focus and context
-                        visualizations. I helped develop a tablet app that tested these types of
-                        visualizations using the Android SDK and then worked on a Desktop version
-                        using C++.`
-        }
-    }
-}
+var homeHTML = data.homeHTML;
+var aboutHTML = data.aboutHTML;
+var educationHTML = data.educationHTML;
+var portfolioHTML = data.portfolioHTML;
+var workHTML = data.workHTML;
+
 
 /**
  * Replaces the currently viewed html content to fit the context of the side menu selection
@@ -143,7 +153,7 @@ var replaceContent = function(subject) {
             var $h1 = $(homeHTML.h1);
             var $h2 = $(homeHTML.h2);
             var $ul = $(homeHTML.ulOpen + homeHTML.li.one + homeHTML.li.two + homeHTML.li.three 
-                + homeHTML.li.four + homeHTML.ulClose);
+                + homeHTML.ulClose);
 
             $('.opening-text').append($h1);
             $('.opening-text').append($h2);
@@ -202,6 +212,7 @@ var replaceContent = function(subject) {
                 $innerDiv.append($leftContainer);
                 $innerDiv.append($rightContainer);
                 $rightContainer.append($title);
+                $rightContainer.append('<hr>');
                 $rightContainer.append($description);
 
                 if (project.links !== undefined) {

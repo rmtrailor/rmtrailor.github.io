@@ -6,7 +6,7 @@ html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     overflow: auto;
-    background-image: url("../images/san-francisco.jpg");
+    background-image: url("../images/san-francisco2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -37,8 +37,8 @@ h4 {
 }
 
 p {
-    font-size: 115%;
-    line-height: 100%;
+    font-size: 125%;
+    line-height: 135%;
 }
 
 /* For mobile */
@@ -69,8 +69,8 @@ p {
 
     p {
         /* font-size: 115%; */
-        font-size: 100%;
-        line-height: 100%;
+        font-size: 115%;
+/*         line-height: 100%; */
     }
 }
 
@@ -111,8 +111,8 @@ p {
 /* For mobile */
 @media only screen and (max-width: 768px) {
     .icon {
-        border: 5px solid #222;
-        background: #222;
+        /* border: 5px solid #222; */
+        /* background: #222; */
         /* border-radius: 150%; */
     }
 
@@ -120,6 +120,11 @@ p {
         left: 80%;
         background: none;
         border: none;
+    }
+
+    .button-links {
+        margin-top: 1%;
+        font-size: 75%;
     }
 }
 
@@ -168,7 +173,7 @@ p {
 /* For mobile */
 @media only screen and (max-width: 768px) {
     .menu .bottom {
-        margin-top: 75%;
+        margin-top: 50%;
     }
 }
 
@@ -234,8 +239,9 @@ p {
 
 .opening-text hr {
     height: 1px;
-    color: #FFF;
-    background-color: #FFF;
+    color: #333;
+    background-color: #333;
+    border-color: #333;
     width: 80%;
 }
 
@@ -292,13 +298,17 @@ p {
     .project-container {
         margin-bottom: 10%;
     }
+
+    .inner-container p {
+        font-size: 100%;
+    }
 }
 
 .project-container h2 {
     font-size: 135%;
     padding-left: 0;
     margin-bottom: 1%;
-    color: #FF7562;
+    color: #4582EC;
 }
 
 .project-container img {
@@ -312,7 +322,6 @@ p {
 .project-container p {
     font-size: 115%;
     text-align: left;
-    line-height: 110%;
 }
 
 .project-container .left-container {
@@ -321,10 +330,14 @@ p {
 
 .project-container .right-container a {
     display: block;
-    color: #4582EC;
+    color: #AAA;
     text-decoration: none;
     margin-top: 2%;
     font-size: 115%;
+}
+
+.project-container .right-container a:hover {
+    color: #DDD;
 }
 
 /* For mobile */
@@ -341,7 +354,7 @@ p {
 }
 
 .inner-container hr {
-    margin-bottom: 4%;
+    margin-bottom: 5%;
 }
 
 
@@ -410,6 +423,7 @@ p {
 .left-container h2 {
     padding-left: 0;
     font-size: 130%;
+    margin-bottom: 2%
 }
 
 .left-container p {
@@ -419,6 +433,11 @@ p {
 .right-container {
     text-align: left;
     margin-left: 50%;
+}
+
+.right-container hr {
+    margin-left: 0;
+    margin-bottom: 2%;
 }
 
 #usf-picture {
