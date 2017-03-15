@@ -5,7 +5,7 @@
 var data = {
     homeHTML: {
         h1: "<h1>Rubin Trailor</h1>",
-        h2: "<h2>Developer | Student</h2>",
+        p: "<p>I'm a San Francisco-based software engineer interested in full-stack web development and data visualization.</p>",
         ulOpen: '<ul class="button-links">',
         li: {
             one: '<li><a href="mailto:contact@rubintrailor.com"><i class="fa fa-envelope"></i></a></li>',
@@ -151,12 +151,13 @@ var replaceContent = function(subject) {
     switch (subject) {  
         case 'home':
             var $h1 = $(homeHTML.h1);
-            var $h2 = $(homeHTML.h2);
+            var $p = $(homeHTML.p);
             var $ul = $(homeHTML.ulOpen + homeHTML.li.one + homeHTML.li.two + homeHTML.li.three 
                 + homeHTML.ulClose);
 
             $('.opening-text').append($h1);
-            $('.opening-text').append($h2);
+            $('.opening-text').append('<hr>');
+            $('.opening-text').append($p);
             $('.opening-text').append($ul);
             $('.opening-text').addClass('home');
 
@@ -331,13 +332,13 @@ var main = function() {
         $(this).css({ color: "#FFF" });
     });
 
-    $('.opening-text ul li a').mouseover(function() {
-        $(this).css({ "font-size": "255%", "color": "#EEE" });
-    })
+    // $('.opening-text ul li a').mouseover(function() {
+    //     $(this).css({ "font-size": "255%", "color": "#EEE" });
+    // })
 
-    $('.opening-text ul li a').mouseout(function() {
-        $(this).css({ "font-size": "250%", "color": "#FFF" });
-    })
+    // $('.opening-text ul li a').mouseout(function() {
+    //     $(this).css({ "font-size": "250%", "color": "#FFF" });
+    // })
 
     $('#resume-button').mouseover(function() {
         $(this).css({ "color": "#4582EC" });
