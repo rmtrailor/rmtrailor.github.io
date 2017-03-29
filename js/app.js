@@ -111,7 +111,7 @@ var data = {
                 title: 'Software Engineer Intern',
                 location: 'CA Technologies',
                 duration: 'Dec. 2016 - Present',
-                description: 'Worked on the frontend side of a web application using React and Redux. Work was focused on communication implementations with the backend of the application.'
+                description: 'Focused on the frontend side of a web application using React and Redux. Worked on communication implementations with blockchain technology.  Developed user action and data sharing techniques across geographically-diverse clients. Implemented data visualization components into the application using D3.js.'
             },
             teachingAssistant: {
                 title: 'Teaching Assistant',
@@ -148,11 +148,11 @@ var workHTML = data.workHTML;
 var replaceContent = function(subject) {
     $('.opening-text').empty();
     $('.opening-text').removeClass('home');
-    switch (subject) {  
+    switch (subject) {
         case 'home':
             var $h1 = $(homeHTML.h1);
             var $p = $(homeHTML.p);
-            var $ul = $(homeHTML.ulOpen + homeHTML.li.one + homeHTML.li.two + homeHTML.li.three 
+            var $ul = $(homeHTML.ulOpen + homeHTML.li.one + homeHTML.li.two + homeHTML.li.three
                 + homeHTML.ulClose);
 
             $('.opening-text').append($h1);
@@ -303,7 +303,7 @@ function slideMenu(direction, time) {
 }
 
 var main = function() {
-    
+
     $('.opening-text').fadeIn(2500, 0);
     $('.icon').fadeIn(2500, 0);
 
@@ -312,7 +312,7 @@ var main = function() {
         if ($('.icon').hasClass('open')) {
             slideMenu('open', 200);
         } else {
-            slideMenu('close', 200); 
+            slideMenu('close', 200);
         }
 
     });
@@ -391,6 +391,6 @@ var main = function() {
     })
 }
 
-$(document).ready(function() {    
+$(document).ready(function() {
     main();
 });
