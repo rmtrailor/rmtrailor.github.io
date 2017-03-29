@@ -111,7 +111,7 @@ var data = {
                 title: 'Software Engineer Intern',
                 location: 'CA Technologies',
                 duration: 'Dec. 2016 - Present',
-                description: 'Focused on the frontend side of a web application using React and Redux. Worked on communication implementations with blockchain technology.  Developed user action and data sharing techniques across geographically-diverse clients. Implemented data visualization components into the application using D3.js.'
+                description: 'Focused on the frontend side of a web application using React and Redux. Worked on communication implementations with the backend of the application and UI design. Developed user action and data sharing techniques across geographically-diverse clients. Implemented data visualization components into the application using D3.js.'
             },
             teachingAssistant: {
                 title: 'Teaching Assistant',
