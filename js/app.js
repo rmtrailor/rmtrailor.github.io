@@ -43,6 +43,16 @@ var data = {
     portfolioHTML: {
         h1: '<h1>Portfolio</h1>',
         projects: {
+            messageServer: {
+              title: 'Messaging Service',
+              description: `Created a replicated, fault tolerant data storage system for a messaging application using Java.
+                            The system could handle up to N - 1 failures (N = number of data servers). Implemented
+                            strong consistency using a passive replication scheme where a primary server received write
+                            requests, and then replicated data to one or more secondary servers. Developed a heartbeat mechanism for
+                            determining whether/when a replica had failed, and implemented a bully algorithm for
+                            election of a new primary replica after a primary replica fails.`,
+              img: `<img src="images/message-service.png" alt="Picture of Messaging Service">`
+            },
             searchEngine: {
                 title: 'Search Engine',
                 description: `The search engine was built using a Java backend. The program featured an inverted index and TF-IDF scoring to
