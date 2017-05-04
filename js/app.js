@@ -71,7 +71,7 @@ var data = {
                             analyze each team against each other based on different factors. This project used a
                             dataset that gave stats for each match in the 2015-2016 season. JavaScript
                             and D3.js were used in this project.`,
-                img: `<img src="images/bpl-visual.png" alt="Picture of Barclay's Premier League Visual Analysis Visualization">`,
+                img: `<img src="images/bpl-visual-2.png" alt="Picture of Barclay's Premier League Visual Analysis Visualization">`,
                 links: [
                     '<a href="portfolio/premier-league-analysis/index.html">Link to Visualization</a>',
                     '<a href="https://github.com/rmtrailor/Premier-League-Visualization">Link to Repository</a>'
