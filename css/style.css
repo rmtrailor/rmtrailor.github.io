@@ -2,529 +2,534 @@
     Author: Rubin Trailor
 =============================================================================*/
 
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    overflow: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/san-francisco3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  overflow: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/san-francisco3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1, h2, h3, h4 {
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
 }
 
 h1 {
-    font-size: 410%;
-    padding: 1%;
+  font-size: 410%;
+  padding: 1%;
 }
 
-
 h2 {
-    font-size: 250%;
-    padding: 1%
+  font-size: 250%;
+  padding: 1%;
 }
 
 h3 {
-    font-size: 250%;
-    margin: 1.5%;
-    margin-bottom: 2%;
+  font-size: 250%;
+  margin: 1.5%;
+  margin-bottom: 2%;
 }
 
 h4 {
-    font-size: 150%;
+  font-size: 150%;
 }
 
 p {
-    font-size: 125%;
-    line-height: 135%;
+  font-size: 125%;
+  line-height: 135%;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    h1 {
-        /* font-size: 410%; */
-        font-size: 250%;
-        padding: 1%;
-    }
+  h1 {
+    /* font-size: 410%; */
+    font-size: 250%;
+    padding: 1%;
+  }
 
-    h2 {
-        /* font-size: 250%; */
-        font-size: 150%;
-        padding: 1%
-    }
+  h2 {
+    /* font-size: 250%; */
+    font-size: 150%;
+    padding: 1%;
+  }
 
-    h3 {
-        /* font-size: 250%; */
-        font-size: 150%;
-        margin: 1.5%;
-        margin-bottom: 2%;
-    }
+  h3 {
+    /* font-size: 250%; */
+    font-size: 150%;
+    margin: 1.5%;
+    margin-bottom: 2%;
+  }
 
-    h4 {
-        /* font-size: 150%; */
-        font-size: 115%;
-    }
+  h4 {
+    /* font-size: 150%; */
+    font-size: 115%;
+  }
 
-    p {
-        /* font-size: 115%; */
-        font-size: 115%;
-/*         line-height: 100%; */
-    }
+  p {
+    /* font-size: 115%; */
+    font-size: 115%;
+    /*         line-height: 100%; */
+  }
 }
 
 #nav-bar {
-    padding: 1.5%;
-    font-size: 125%;
-    text-align: center;
+  padding: 1.5%;
+  font-size: 125%;
+  text-align: center;
 }
 
 #nav-bar li {
-    display: inline;
+  display: inline;
 }
 
 #nav-bar li a {
-    color: #AAA;
-    text-decoration: none;
-    margin-left: 3.5%;
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 3.5%;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .icon {
-    float: left;
-    cursor: pointer;
-    font-size: 250%;
-    text-align: left;
-    margin-top: 5%;
-    margin-left: 3%;
-    color: #FFF;
-    text-shadow: 1px 1px 1px #111;
-    position: fixed;
-    transition: color .2s ease-in-out;
-    transition: font-size 0.2s ease-in-out;
+  float: left;
+  cursor: pointer;
+  font-size: 250%;
+  text-align: left;
+  margin-top: 5%;
+  margin-left: 3%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #111;
+  position: fixed;
+  transition: color 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .icon {
-        /* border: 5px solid #222; */
-        /* background: #222; */
-        /* border-radius: 150%; */
-    }
+  .closed {
+    left: 80%;
+    background: none;
+    border: none;
+  }
 
-    .closed {
-        left: 80%;
-        background: none;
-        border: none;
-    }
-
-    .button-links {
-        margin-top: 1%;
-        font-size: 75%;
-    }
+  .button-links {
+    margin-top: 1%;
+    font-size: 75%;
+  }
 }
 
 .menu {
-    text-shadow: 1px 1px 1px #111;
-    text-align: left;
-    background-color: #222;
-    color: #FFF;
-    font-size: 160%;
-    left: -20%;
-    height: 100%;
-    max-height: 100%;
-    position: fixed;
-    width: 20%;
+  text-shadow: 1px 1px 1px #111;
+  text-align: left;
+  background-color: #222;
+  color: #fff;
+  font-size: 160%;
+  left: -20%;
+  height: 100%;
+  max-height: 100%;
+  position: fixed;
+  width: 20%;
 }
 
 .menu ul {
-    margin: 10% 5%;
+  margin: 10% 5%;
 }
 
 .menu ul li {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .menu ul li {
-    color: #FFF;
-    transition: color .2s ease-in-out;
-    cursor: pointer;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .menu hr {
-    width: 85%;
-    vertical-align: bottom;
+  width: 85%;
+  vertical-align: bottom;
 }
 
 .menu p {
-    font-size: 50%;
-    text-align: center;
+  font-size: 50%;
+  text-align: center;
 }
 
 .menu .bottom {
-    margin-top: 150%;
-    text-align: center;
+  margin-top: 150%;
+  text-align: center;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .menu .bottom {
-        margin-top: 50%;
-    }
+  .menu .bottom {
+    margin-top: 50%;
+  }
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .menu {
-        font-size: 160%;
-        left: -100%;
-        position: fixed;
-        width: 100%;
-    }
+  .menu {
+    font-size: 160%;
+    left: -100%;
+    position: fixed;
+    width: 100%;
+  }
 }
 
 #resume-button {
-    text-align: center;
-    color: #FFF;
-    font-size: 100%;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
+  text-align: center;
+  color: #fff;
+  font-size: 100%;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
 .opening-container {
-    text-align: center;
-    background-size: con;
-    color: #FFF;
-    height: 100%;
-    position: relative;
+  text-align: center;
+  background-size: con;
+  color: #fff;
+  height: 100%;
+  position: relative;
 }
 
 .opening-text {
-    padding-top: 15%;
-    text-shadow: 1px 1px 5px #000;
+  padding-top: 15%;
+  text-shadow: 1px 1px 5px #000;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .opening-text {
-        padding-top: 20%;
-    }
+  .opening-text {
+    padding-top: 20%;
+  }
 
-    .home {
-        padding-top: 50%;
-    }
+  .home {
+    padding-top: 50%;
+  }
 
-    .opening-text h1 {
-        font-size: 285%;
-    }
+  .opening-text h1 {
+    font-size: 285%;
+  }
 
-    .opening-text h2 {
-        font-size: 175%;
-    }
+  .opening-text h2 {
+    font-size: 175%;
+  }
 }
 
 .opening-text h1 {
-    margin-bottom: 1%;
-    padding-bottom: 0;
+  margin-bottom: 1%;
+  padding-bottom: 0;
 }
 
 .opening-text h2 {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .opening-text hr {
-    height: 1px;
-    color: #333;
-    background-color: #333;
-    border-color: #333;
-    width: 80%;
+  height: 1px;
+  color: #333;
+  background-color: #333;
+  border-color: #333;
+  width: 80%;
 }
 
 .home hr {
-    border: 1px solid #AAA;
-    text-align: center;
-    max-width: 12%; 
-    color: #FFF;
-    background-color: #AAA;
+  border: 1px solid #aaa;
+  text-align: center;
+  max-width: 12%;
+  color: #fff;
+  background-color: #aaa;
 }
 
 .home p {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 1%;
-    font-size: 200%;
-    color: #DDD;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 1%;
+  font-size: 200%;
+  color: #ddd;
 }
 
 .button-links {
-    margin-left: 30%;
-    margin-right: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .button-links a {
-    margin: 1%;
+  margin: 1%;
 }
 
 .button-links a:hover {
-    color: #DDD;
+  color: #ddd;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .home hr {
-        margin-top: 3%;
-    }
+  .home hr {
+    margin-top: 3%;
+  }
 
-    .home p {
-        font-size: 120%;
-        margin-top: 5%;
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-bottom: 20%;
-    }
+  .home p {
+    font-size: 120%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20%;
+  }
 }
 
-
 .button-links {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 .button-links li {
-    display: inline;
-    margin-right: 2%;
+  display: inline;
+  margin-right: 2%;
 }
 
 .button-links li a {
-    color: #FFF;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-    transition: font-size 0.2s ease-in-out;
-    font-size: 250%;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
+  font-size: 250%;
 }
 
 .bio {
-    margin: 1% 20%;
-    padding: 2%;
-    line-height: 150%;
+  margin: 1% 20%;
+  padding: 2%;
+  line-height: 150%;
+  font-size: 24px;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .bio {
-        margin: 1% 5%;
-    }
+  .bio {
+    margin: 1% 5%;
+  }
 
-    .bio p {
-        font-size: 100%;
-    }
+  .bio p {
+    font-size: 100%;
+  }
 }
 
 .inner-container {
-    background-color: #111;
-    overflow: auto;
-    padding: 3%;
+  background-color: #111;
+  overflow: auto;
+  padding: 3%;
 }
 
 .inner-container h1 {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .project-container {
-    margin: 1% 5%;
+  margin: 1% 5%;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .project-container {
-        margin-bottom: 10%;
-    }
+  .project-container {
+    margin-bottom: 10%;
+  }
 
-    .inner-container p {
-        font-size: 100%;
-    }
+  .inner-container p {
+    font-size: 100%;
+  }
 }
 
 .project-container h2 {
-    font-size: 135%;
-    padding-left: 0;
-    margin-bottom: 1%;
-    color: #4582EC;
+  font-size: 135%;
+  padding-left: 0;
+  margin-bottom: 1%;
+  color: #4582ec;
 }
 
 .project-container img {
-    width: 85%;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 7.5%;
-    border-radius: 0;
+  width: 85%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 7.5%;
+  border-radius: 0;
 }
 
 .project-container p {
-    font-size: 115%;
-    text-align: left;
+  font-size: 115%;
+  text-align: left;
 }
 
 .project-container .left-container {
-    margin: 0;
+  margin: 0;
 }
 
 .project-container .right-container a {
-    display: block;
-    color: #AAA;
-    text-decoration: none;
-    margin-top: 2%;
-    font-size: 115%;
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  margin-top: 2%;
+  font-size: 115%;
 }
 
 .project-container .right-container a:hover {
-    color: #DDD;
+  color: #ddd;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .project-container img {
-        text-align: center;
-        /* margin-left: 1% */
-    }
+  .project-container img {
+    text-align: center;
+    /* margin-left: 1% */
+  }
 
-    .inner-container h1 {
-        font-size: 200%;
-        margin-bottom: 5%;
-    }
+  .inner-container h1 {
+    font-size: 200%;
+    margin-bottom: 5%;
+  }
 }
 
 .inner-container hr {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
-
 .work-container {
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .work-container h2 {
-    font-size: 160%;
-    padding-left: 0;
-    margin-left: 0;
-    color: #4582EC;
+  font-size: 160%;
+  padding-left: 0;
+  margin-left: 0;
+  color: #4582ec;
 }
 
 .work-container h2 span {
-    color: #AAA;
+  color: #aaa;
 }
 
 .work-container p {
-    font-size: 135%;
-    line-height: 175%;
-    margin-bottom: 3%;
+  font-size: 135%;
+  line-height: 175%;
+  margin-bottom: 3%;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .work-container {
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-bottom: 5%;
-    }
+  .work-container {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+  }
 
-    .work-container h1 {
-        font-size: 100%;
-    }
+  .work-container h1 {
+    font-size: 100%;
+  }
 
-    .work-container h2 {
-        font-size: 90%;
-        line-height: 115%;
-    }
+  .work-container h2 {
+    font-size: 90%;
+    line-height: 115%;
+  }
 
-    .work-container p {
-        font-size: 80%;
-    }
+  .work-container p {
+    font-size: 80%;
+  }
 }
 
 .left-container {
-    float: left;
-    text-align: left;
-    margin: 3% 20%;
-    margin-left: 10%;
-    width: 40%;
+  float: left;
+  text-align: left;
+  margin: 3% 20%;
+  margin-left: 10%;
+  width: 40%;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .left-container {
-        text-align: center;
-        margin: 3% 5%;
-        width: 100%;
-    }
+  .left-container {
+    text-align: center;
+    margin: 3% 5%;
+    width: 100%;
+  }
 }
 
 .left-container h2 {
-    padding-left: 0;
-    font-size: 130%;
-    margin-bottom: 2%
+  padding-left: 0;
+  font-size: 130%;
+  margin-bottom: 2%;
 }
 
 .left-container p {
-    line-height: 150%;
+  line-height: 150%;
 }
 
 .right-container {
-    text-align: left;
-    margin-left: 50%;
+  text-align: left;
+  margin-left: 50%;
 }
 
 .right-container hr {
-    margin-left: 0;
-    margin-bottom: 2%;
+  margin-left: 0;
+  margin-bottom: 2%;
 }
 
 #usf-picture {
-    width: 40%;
-    height: 40%;
-    border: 2px solid #FFF;
-    border-radius: 15px;
-    padding: 0;
+  width: 40%;
+  height: 40%;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 0;
+}
+
+.university-name {
+  font-size: 30px !important;
+}
+
+.university-description {
+  font-size: 22px;
 }
 
 /* For mobile */
 @media only screen and (max-width: 768px) {
-    .inner-container .right-container {
-        text-align: center;
-        margin-left: 0%;
-    }
+  .inner-container .right-container {
+    text-align: center;
+    margin-left: 0%;
+  }
 
-    .right-container hr {
-        margin-left: 7.5%;
-    }
+  .right-container hr {
+    margin-left: 7.5%;
+  }
 
-    .inner-container .left-container {
-        width: 100%;
-    }
+  .inner-container .left-container {
+    width: 100%;
+  }
 
-    .inner-container .left-container h2 {
-        padding-left: 0;
-        font-size: 90%;
-    }
+  .inner-container .left-container h2 {
+    padding-left: 0;
+    font-size: 90%;
+  }
 
-    .inner-container .left-container p {
-        padding-left: 0;
-        font-size: 85%;
-    }
+  .inner-container .left-container p {
+    padding-left: 0;
+    font-size: 85%;
+  }
 
-    #usf-picture {
-        width: 80%;
-        height: 80%;
-        border:  1px solid #FFF;
-    }
+  #usf-picture {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #fff;
+  }
 
-    .education .left-container {
-        text-align: left;
-    }
+  .education .left-container {
+    text-align: left;
+  }
 }
