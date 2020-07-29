@@ -19,6 +19,7 @@
   --fs-body: 1rem;
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  --bs-smaller: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -283,6 +284,10 @@ header {
 }
 
 /* Intro Section */
+.section__subtitle--intro {
+  box-shadow: var(--bs-smaller);
+}
+
 .intro {
   position: relative;
 }
@@ -377,12 +382,9 @@ header {
   margin: 0 auto;
 }
 
-/*
-TODO: Uncomment this when img is added
 .about-me__img {
   box-shadow: var(--bs);
 }
-*/
 
 @media (min-width: 600px) {
   .about-me {
@@ -406,7 +408,8 @@ TODO: Uncomment this when img is added
     left: -1em;
     width: calc(100% + 2em);
     padding-left: 1em;
-    /* padding-right: calc(200px + 4em); TODO: uncomment with img */
+    padding-right: calc(200px + 4em);
+    box-shadow: var(--bs-smaller);
   }
 
   .about-me__img {
