@@ -375,6 +375,10 @@ header {
   font-size: var(--fs-h3);
 }
 
+.skill__icon {
+  margin-right: 0.35em;
+}
+
 @media (min-width: 800px) {
   .skills {
     display: flex;
