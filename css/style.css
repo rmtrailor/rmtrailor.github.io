@@ -510,6 +510,7 @@ header {
   border: none;
   color: var(--clr-dark);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .portfolio-modal__header {
