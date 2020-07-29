@@ -21,28 +21,49 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="nav-bar">
       <div class="logo">
         <span>Rubin Trailor</span>
         <!-- TODO: Put logo here, either text or img -->
         <!-- <img src="" alt="">  -->
       </div>
+
+      <!-- Desktop Nav -->
+      <nav class="normal-nav">
+        <ul class="normal-nav__list">
+          <li class="normal-nav__item">
+            <a href="#home" class="normal-nav__link">Home</a>
+          </li>
+          <li class="normal-nav__item">
+            <a href="#skills" class="normal-nav__link">My Skills</a>
+          </li>
+          <li class="normal-nav__item">
+            <a href="#about" class="normal-nav__link">About Me</a>
+          </li>
+          <li class="normal-nav__item">
+            <a href="#work" class="normal-nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Nav -->
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">Home</a>
+
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="#home" class="mobile-nav__link">Home</a>
           </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">My Skills</a>
+          <li class="mobile-nav__item">
+            <a href="#skills" class="mobile-nav__link">My Skills</a>
           </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
+          <li class="mobile-nav__item">
+            <a href="#about" class="mobile-nav__link">About Me</a>
           </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">My Work</a>
+          <li class="mobile-nav__item">
+            <a href="#work" class="mobile-nav__link">My Work</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +75,7 @@
         Hi, I am <strong>Rubin Trailor</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        Software Engineer
+        Full-Stack Software Engineer
       </p>
       <img
         src="img/profile-picture.png"
@@ -98,41 +119,41 @@
           </p>
         </div>
       </div>
-      <a href="#work" class="btn">My Work</a>
+      <a href="#" class="btn resume-button"
+        ><i class="fas fa-download"></i>Resume
+      </a>
     </section>
 
     <!-- About Me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I Am</h2>
       <p class="section__subtitle section__subtitle--about">
-        Full-Stack Software Engineer based in the SF Bay Area
+        Software Engineer based in the SF Bay Area
       </p>
       <div class="about-me__body">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
-          sem lectus. In non est nec nibh vulputate ullamcorper. Suspendisse sed
-          auctor metus, tincidunt gravida elit. Pellentesque habitant morbi
-          tristique senectus et netus et malesuada fames ac turpis egestas. Orci
-          varius natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus.
+          My name is Rubin Trailor and I'm currently a Full-Stack Software
+          Engineer. A main interest of mine is using programming as a visual
+          medium for information. The fields I feel most passionate about is:
+          data visualization and web development. However, my interests aren't
+          limited there – I'm always wanting to learn new things, and almost
+          every day I learn something new and fascinating in this field.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
-          sem lectus. In non est nec nibh vulputate ullamcorper. Suspendisse sed
-          auctor metus, tincidunt gravida elit. Pellentesque habitant morbi
-          tristique senectus et netus et malesuada fames ac turpis egestas. Orci
-          varius natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus.
+          Outside of programming, I'm a huge gamer. Some of my favorite genres
+          are: JRPG, FPS, Fighters, and MMOs.
         </p>
       </div>
       <!-- TODO: img here -->
-      <img src="" alt="" class="about-me__img" />
+      <img src="./img/laptop.jpg" alt="" class="about-me__img" />
     </section>
 
     <!-- My Work -->
     <section class="my-work" id="work">
       <h2 class="section__title">My Work</h2>
-      <p class="section__subtitle">Checkout my range of work</p>
+      <p class="section__subtitle section__subtitle--work">
+        Checkout my range of work
+      </p>
       <div class="portfolio">
         <!-- TODO: Create one of these for each project -->
         <a href="#" class="portfolio__item">
