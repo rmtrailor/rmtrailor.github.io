@@ -330,9 +330,6 @@ header {
 /* My Skills Section */
 .my-skills {
   background-color: var(--clr-dark);
-  /* background-image: url(../img/san-francisco3.jpg); */
-  background-size: cover;
-  background-blend-mode: multiply;
   color: var(--clr-light);
   text-align: center;
 }
@@ -476,7 +473,10 @@ header {
 
 /* Footer */
 .footer {
+  max-height: 220px;
   background: #111;
+  background-image: url(../img/golden-gate-bridge.png);
+  background-size: cover;
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
