@@ -451,6 +451,8 @@ header {
 }
 
 .portfolio__item {
+  max-height: 300px;
+  max-width: 450px;
   overflow: hidden;
   background: none;
   border: none;
