@@ -544,10 +544,14 @@ header {
   display: flex;
   text-align: left;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .portfolio-modal__tag {
+  width: max-content;
+  height: min-content;
   padding: 0 0.5em;
+  margin-bottom: 0.35em;
   margin-right: 0.25em;
   background: var(--clr-accent);
   color: var(--clr-light);
