@@ -499,10 +499,12 @@ header {
 .portfolio-modal__dialog {
   position: relative;
   max-width: 500px;
+  height: 500px;
   padding: var(--portfolio-modal-padding);
   margin: 0 auto;
   border-radius: 0.25em;
   background-color: var(--clr-light);
+  overflow-y: scroll;
 }
 
 .portfolio-modal__close {
@@ -585,6 +587,7 @@ header {
 @media (min-width: 800px) {
   .portfolio-modal__dialog {
     max-width: 1000px;
+    overflow-y: hidden;
   }
 
   .portfolio-modal__img {
