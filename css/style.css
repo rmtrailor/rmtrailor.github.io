@@ -593,6 +593,7 @@ header {
   .portfolio-modal__img {
     max-width: 450px;
     max-height: 450px;
+    padding-right: 1em;
   }
 
   .portfolio-modal__text {
