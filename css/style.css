@@ -399,6 +399,11 @@ header {
   box-shadow: var(--bs);
 }
 
+.about-me__job-title {
+  color: #1798c1;
+  text-decoration: none;
+}
+
 @media (min-width: 600px) {
   .about-me {
     display: grid;
