@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubin Trailor Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FontAwesome Kit Script -->
+    <script src="https://kit.fontawesome.com/79d73ab3b6.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-173981064-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173981064-1');
+    </script>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <div class="logo">
+        <span>Rubin Trailor</span>
+        <!-- TODO: Get an actual logo here, either text or img -->
+        <!-- <img src="" alt="">  -->
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="normal-nav">
+        <ul class="normal-nav__list">
+          <li class="normal-nav__item">
+            <a href="#home" class="normal-nav__link">Home</a>
+          </li>
+          <li class="normal-nav__item">
+            <a href="#skills" class="normal-nav__link">My Skills</a>
+          </li>
+          <li class="normal-nav__item">
+            <a href="#about" class="normal-nav__link">About Me</a>
+          </li>
+          <li class="normal-nav__item">
+            <a href="#work" class="normal-nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="#home" class="mobile-nav__link">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#skills" class="mobile-nav__link">My Skills</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#about" class="mobile-nav__link">About Me</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#work" class="mobile-nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Rubin Trailor</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Full-Stack Software Engineer
+      </p>
+      <img
+        src="img/profile-picture.png"
+        alt="A profile picture of Rubin Trailor"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My Skills -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills">What I Can Do</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3 class="section__subtitle--skill">Front-End Development</h3>
+          <ul class="skill__list">
+            <li class="skill__item">
+              <i class="fa-brands fa-html5 skill__icon"></i>HTML
+            </li>
+            <li class="skill__item">
+              <i class="fab fa-css3-alt skill__icon"></i>CSS & TailwindCSS
+            </li>
+            <li class="skill__item">
+              <i class="fab fa-js skill__icon"></i>JavaScript & TypeScript
+            </li>
+            <li class="skill__item">
+              <i class="fab fa-react skill__icon"></i>React & Next.js
+            </li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3 class="section__subtitle--skill">Back-End Development</h3>
+          <ul class="skill__list">
+            <li class="skill__item">
+              <i class="fab fa-node skill__icon"></i>Node
+            </li>
+            <li class="skill__item">
+              <i class="fab fa-node-js skill__icon"></i>Express
+            </li>
+            <li class="skill__item">
+              <i class="fab fa-java skill__icon"></i>Java
+            </li>
+            <li class="skill__item">
+              <i class="fas fa-server skill__icon"></i>Spring
+            </li>
+            <li class="skill__item">
+              <i class="fas fa-database skill__icon"></i>PostgreSQL
+            </li>
+            <li class="skill__item">
+              <i class="fa-brands fa-golang skill__icon"></i>GoLang (Currently Learning)
+            </li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3 class="section__subtitle--skill">Technologies & Tools</h3>
+          <ul class="skill__list">
+            <li class="skill__item">
+              <i class="fab fa-git-alt skill__icon"></i>Git
+            </li>
+            <li class="skill__item">
+              <i class="fab fa-jira skill__icon"></i>JIRA & Confluence
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://www.linkedin.com/in/rmtrailor/" class="btn resume-button" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>Linkedin
+      </a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I Am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Software Engineer based in the SF Bay Area
+      </p>
+      <div class="about-me__body">
+        <p>
+          My name is Rubin Trailor and I'm a Full-Stack Software Engineer with experience creating intuitive and stunning UIs, with dependable and efficient backend APIs. My previous positions have been at places such as Salesforce and Auction.com.
+        </p>
+        <p>
+          A main interest of mine is using programming as a visual medium for
+          information. The fields I feel most passionate about is: data
+          visualization and web development. However, my interests aren't
+          limited there – I'm always wanting to learn new things, and almost
+          every day I learn something new and fascinating in this field.
+        </p>
+        <p>
+          I'm currently looking for a new opportunity, so feel free to reach out if you need someone who can hit the ground running and start working on your next big project.
+        </p>
+      </div>
+      <!-- TODO: img here -->
+      <img src="./img/laptop.jpg" alt="" class="about-me__img" />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Checkout my range of work
+      </p>
+      <div class="portfolio">
+        <button class="portfolio__item">
+          <img
+            name="message-service"
+            src="./img/message-service.png"
+            alt="Image of message service project"
+            class="portfolio__img"
+          />
+        </button>
+        <button class="portfolio__item">
+          <img
+            name="pathfinder"
+            src="./img/pathfinder.png"
+            alt="Image of pathfinder project"
+            class="portfolio__img"
+          />
+        </button>
+        <button class="portfolio__item">
+          <img
+            name="bpl-visual"
+            src="./img/bpl-visual-2.png"
+            alt="Image of bpl visual project"
+            class="portfolio__img"
+          />
+        </button>
+        <button class="portfolio__item">
+          <img
+            name="tree-visualization"
+            src="./img/tree-visualization.png"
+            alt="Image of tree visualization project"
+            class="portfolio__img"
+          />
+        </button>
+        <button class="portfolio__item">
+          <img
+            name="market-health-index"
+            src="./img/market-health-index.png"
+            alt="Image of market health index project"
+            class="portfolio__img"
+          />
+        </button>
+      </div>
+    </section>
+
+    <!-- Skill Modals -->
+    <aside>
+      <div class="portfolio-modal" portfolio-name="message-service">
+        <div class="portfolio-modal__dialog">
+          <button
+            class="portfolio-modal__close"
+            value="message-service"
+            onclick="closeModal(value)"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <header class="portfolio-modal__header">
+            <h3 class="portfolio-modal__title">Paxos Messaging Service</h3>
+          </header>
+          <div class="portfolio-modal__content">
+            <img
+              src="./img/message-service.png"
+              alt="Image of messaging service project"
+              class="portfolio-modal__img"
+            />
+            <div class="portfolio-modal__text">
+              <p>
+                Created a replicated, fault tolerant data storage system for a
+                messaging application using Java. The system could handle up to
+                N - 1 failures (N = number of data servers). Implemented strong
+                consistency using a passive replication scheme where a primary
+                server received write requests, and then replicated data to one
+                or more secondary servers. Developed a heartbeat mechanism for
+                determining whether/when a replica had failed, and implemented a
+                bully algorithm for election of a new primary replica after a
+                primary replica fails.
+              </p>
+              <ul class="portfolio-modal__tags">
+                <li class="portfolio-modal__tag">Java</li>
+                <li class="portfolio-modal__tag">Back-End</li>
+                <li class="portfolio-modal__tag">Distributed Systems</li>
+              </ul>
+              <ul class="portfolio-modal__links">
+                <li class="portfolio-modal__item">
+                  <a
+                    class="portfolio-modal__link"
+                    href="https://github.com/rmtrailor/Paxos"
+                    target="_blank"
+                  >
+                    Link to repository
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-modal" portfolio-name="pathfinder">
+        <div class="portfolio-modal__dialog">
+          <button
+            class="portfolio-modal__close"
+            value="pathfinder"
+            onclick="closeModal(value)"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <header class="portfolio-modal__header">
+            <h3 class="portfolio-modal__title">Pathfinder - Search Engine</h3>
+          </header>
+          <div class="portfolio-modal__content">
+            <img
+              src="./img/pathfinder.png"
+              alt="Image of pathfinder project"
+              class="portfolio-modal__img"
+            />
+            <div class="portfolio-modal__text">
+              <p>
+                The search engine was built using a Java backend. The program
+                featured an inverted index and TF-IDF scoring to store and rank
+                searches. The search engine featured user support that saved
+                user information to a database. Users could: login and logoff,
+                view and delete search history, private search, and change their
+                password. This program was a five-part project for my Software
+                Development class at USF. Therefore, the repository is not
+                public. If you wish to see the source code, I would be happy to
+                send it.
+              </p>
+              <ul class="portfolio-modal__tags">
+                <li class="portfolio-modal__tag">Java</li>
+                <li class="portfolio-modal__tag">Back-End</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-modal" portfolio-name="bpl-visual">
+        <div class="portfolio-modal__dialog">
+          <button
+            class="portfolio-modal__close"
+            value="bpl-visual"
+            onclick="closeModal(value)"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <header class="portfolio-modal__header">
+            <h3 class="portfolio-modal__title">
+              Barclay's Premier League Visual Analysis
+            </h3>
+          </header>
+          <div class="portfolio-modal__content">
+            <img
+              src="./img/bpl-visual-2.png"
+              alt="Image of bpl visualization project"
+              class="portfolio-modal__img"
+            />
+            <div class="portfolio-modal__text">
+              <p>
+                For this project I visualized the performance of the different
+                teams in the Barclay's Premier League. The project features four
+                visualizations that analyze each team against each other based
+                on different factors. This project used a dataset that gave
+                stats for each match in the 2015-2016 season. JavaScript and
+                D3.js were used in this project.
+              </p>
+              <ul class="portfolio-modal__tags">
+                <li class="portfolio-modal__tag">JavaScript</li>
+                <li class="portfolio-modal__tag">D3.js</li>
+                <li class="portfolio-modal__tag">Front-End</li>
+                <li class="portfolio-modal__tag">Data Analysis</li>
+              </ul>
+              <ul class="portfolio-modal__links">
+                <li class="portfolio-modal__item">
+                  <a
+                    class="portfolio-modal__link"
+                    href="https://www.rubintrailor.com/portfolio/premier-league-analysis/index.html"
+                    target="_blank"
+                  >
+                    Link to project
+                  </a>
+                </li>
+                <li class="portfolio-modal__item">
+                  <a
+                    class="portfolio-modal__link"
+                    href="https://github.com/rmtrailor/Premier-League-Visualization"
+                    target="_blank"
+                  >
+                    Link to repository
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-modal" portfolio-name="tree-visualization">
+        <div class="portfolio-modal__dialog">
+          <button
+            class="portfolio-modal__close"
+            value="tree-visualization"
+            onclick="closeModal(value)"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <header class="portfolio-modal__header">
+            <h3 class="portfolio-modal__title">
+              San Francisco Maintenance Call visualization
+            </h3>
+          </header>
+          <div class="portfolio-modal__content">
+            <img
+              src="./img/tree-visualization.png"
+              alt="Image of tree visualization project"
+              class="portfolio-modal__img"
+            />
+            <div class="portfolio-modal__text">
+              <p>
+                Visualized San Francisco 311 Tree Maintenance Calls public
+                dataset using JavaScript and D3.js. Parsed GeoJSON data to
+                create a choropleth map of San Francisco and placed color-coded
+                symbols on the map for each maintenance call. Interactive
+                Features: Tooltips when hovering over symbols or neighborhood
+                areas, and radio buttons to filter the display of symbol groups.
+              </p>
+              <ul class="portfolio-modal__tags">
+                <li class="portfolio-modal__tag">JavaScript</li>
+                <li class="portfolio-modal__tag">D3.js</li>
+                <li class="portfolio-modal__tag">Front-End</li>
+                <li class="portfolio-modal__tag">Data Analysis</li>
+              </ul>
+              <ul class="portfolio-modal__links">
+                <li class="portfolio-modal__item">
+                  <a
+                    class="portfolio-modal__link"
+                    href="https://www.rubintrailor.com/portfolio/tree-maintenance/index.html"
+                    target="_blank"
+                  >
+                    Link to project
+                  </a>
+                </li>
+                <li class="portfolio-modal__item">
+                  <a
+                    class="portfolio-modal__link"
+                    href="https://github.com/rmtrailor/SF-Tree-Maintenance-Calls-Visualization"
+                    target="_blank"
+                  >
+                    Link to repository
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-modal" portfolio-name="market-health-index">
+        <div class="portfolio-modal__dialog">
+          <button
+            class="portfolio-modal__close"
+            value="market-health-index"
+            onclick="closeModal(value)"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <header class="portfolio-modal__header">
+            <h3 class="portfolio-modal__title">
+              Market Health Index visualization
+            </h3>
+          </header>
+          <div class="portfolio-modal__content">
+            <img
+              src="./img/market-health-index.png"
+              alt="Image of market health index visualization project"
+              class="portfolio-modal__img"
+            />
+            <div class="portfolio-modal__text">
+              <p>
+                Visualized the Zillow's dataset on the United States Market
+                Health Index using a scatterplot matrix. Prototypes for this
+                dataset were made using Tableau. The actual scatterplot matrix
+                was created using JavaScript and the D3.js library.
+              </p>
+              <ul class="portfolio-modal__tags">
+                <li class="portfolio-modal__tag">JavaScript</li>
+                <li class="portfolio-modal__tag">D3.js</li>
+                <li class="portfolio-modal__tag">Front-End</li>
+                <li class="portfolio-modal__tag">Data Analysis</li>
+              </ul>
+              <ul class="portfolio-modal__links">
+                <li class="portfolio-modal__item">
+                  <a
+                    class="portfolio-modal__link"
+                    href="https://www.rubintrailor.com/portfolio/market-health-index/index.html"
+                    target="_blank"
+                  >
+                    Link to project
+                  </a>
+                </li>
+                <li class="portfolio-modal__item">
+                  <a
+                    class="portfolio-modal__link"
+                    href="https://github.com/rmtrailor/Market-Health-Index-Visualization"
+                    target="_blank"
+                  >
+                    Link to repository
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:contact@rubintrailor.com" class="footer__link">
+        contact@rubintrailor.com
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://github.com/rmtrailor" class="social-list__link">
+            <i class="fab fa-github-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/rmtrailor/"
+            class="social-list__link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
