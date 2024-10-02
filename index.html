@@ -31,7 +31,10 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <!-- FontAwesome Kit Script -->
-    <script src="https://kit.fontawesome.com/79d73ab3b6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/79d73ab3b6.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -42,80 +45,44 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-173981064-1');
+      gtag("config", "UA-173981064-1");
     </script>
   </head>
   <body>
-    <header class="nav-bar">
-      <div class="logo">
-        <span>Rubin Trailor</span>
-        <!-- TODO: Get an actual logo here, either text or img -->
-        <!-- <img src="" alt="">  -->
-      </div>
-
-      <!-- Desktop Nav -->
-      <nav class="normal-nav">
-        <ul class="normal-nav__list">
-          <li class="normal-nav__item">
-            <a href="#home" class="normal-nav__link">Home</a>
-          </li>
-          <li class="normal-nav__item">
-            <a href="#skills" class="normal-nav__link">My Skills</a>
-          </li>
-          <li class="normal-nav__item">
-            <a href="#about" class="normal-nav__link">About Me</a>
-          </li>
-          <li class="normal-nav__item">
-            <a href="#work" class="normal-nav__link">My Work</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Mobile Nav -->
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-
-      <nav class="mobile-nav">
-        <ul class="mobile-nav__list">
-          <li class="mobile-nav__item">
-            <a href="#home" class="mobile-nav__link">Home</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#skills" class="mobile-nav__link">My Skills</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#about" class="mobile-nav__link">About Me</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="#work" class="mobile-nav__link">My Work</a>
-          </li>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">Rubin Trailor</a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Introduction -->
-    <section class="intro" id="home">
-    </section>
+    <section class="intro" id="home"></section>
 
     <!-- My Skills -->
-    <section class="my-skills" id="skills">
-    </section>
+    <section class="my-skills" id="skills"></section>
 
     <!-- About Me -->
-    <section class="about-me" id="about">
-    </section>
+    <section class="about-me" id="about"></section>
 
     <!-- My Projects -->
-    <section class="my-projects" id="projects">
-    </section>
-
+    <section class="my-projects" id="projects"></section>
 
     <!-- Footer -->
-    <footer class="footer">
-    </footer>
+    <footer class="footer"></footer>
 
     <script src="js/index.js"></script>
   </body>

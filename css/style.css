@@ -6,8 +6,8 @@
 
 /* Custom Properties */
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --ff-secondary: 'Source Code Pro', monospace;
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
   --fw-reg: 300;
   --fw-bold: 900;
   --clr-light: #fff;
@@ -42,3 +42,99 @@ body {
   line-height: 1.6;
 }
 
+/* Navbar - Desktop */
+nav {
+  height: 5rem;
+  background-color: var(--clr-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.logo a {
+  font-size: 2rem;
+  color: var(--clr-light);
+  text-decoration: none;
+}
+
+nav label i {
+  font-size: 2rem;
+}
+
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 2.5rem;
+}
+
+.nav-links li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: var(--clr-light);
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--clr-accent);
+}
+
+.nav-links .home-link {
+  margin-right: auto;
+}
+
+/* Navbar - Mobile */
+.menu-icon {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--clr-light);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    width: 100%;
+    background-color: var(--clr-dark);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: all 0.9s;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
