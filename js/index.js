@@ -1,3 +1,42 @@
+// Logic for showing or hiding the consent box on page load
+function hideConsentBox() {
+  const consentBox = document.querySelector(".consent-box");
+  consentBox.classList.add("hide");
+}
+
+function checkConsentCookie() {
+  return document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("rt-consent="))
+    ?.split("=")[1];
+}
+
+function updateGoogleTagConsent(choice) {
+  gtag("consent", "update", {
+    ad_storage: choice,
+    ad_user_data: choice,
+    ad_personalization: choice,
+    analytics_storage: choice,
+  });
+}
+
+function consentClickHandler(granted) {
+  const choice = granted ? "granted" : "denied";
+  const maxAgeYear = 60 * 60 * 24 * 365;
+  const cookieString = `rt-consent=${choice}; SameSite=Lax; max-age=${maxAgeYear}`;
+  document.cookie = cookieString;
+  updateGoogleTagConsent(choice);
+  hideConsentBox();
+}
+
+function displayOrHideConsentBox() {
+  if (checkConsentCookie() !== null && checkConsentCookie() !== undefined) {
+    hideConsentBox();
+  }
+}
+
+displayOrHideConsentBox();
+
 // Find all the elements that have the fade in style and style an element to fade in
 // if that element is in the viewport.
 function checkFadeInLocations() {

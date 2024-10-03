@@ -714,6 +714,78 @@ footer {
   }
 }
 
+.consent-box {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--clr-light);
+  width: 100vw;
+  border-top: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  text-align: center;
+  z-index: 50;
+}
+
+.consent-box.hide {
+  display: none;
+}
+
+.consent-box p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.consent-box p a {
+  text-decoration: none;
+  color: var(--clr-accent);
+  font-weight: bold;
+}
+
+.consent-box p a:hover {
+  border-bottom: 2px solid var(--clr-accent);
+}
+
+.consent-box div {
+  display: flex;
+  gap: 1rem;
+}
+
+.consent-box button {
+  border: 1px solid var(--clr-dark);
+  padding: 0.9rem 2.75rem;
+  border-radius: 5%;
+  font-weight: bold;
+}
+
+.accept-button {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.decline-button {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+@media (min-width: 1024px) {
+  .consent-box {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .consent-box p {
+    font-size: 1.25rem;
+  }
+
+  .consent-box button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
 /* Circle Animation */
 /* .button::before {
   clip-path: circle(71% at 50% 50%);

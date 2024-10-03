@@ -35,6 +35,19 @@
       src="https://kit.fontawesome.com/79d73ab3b6.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Default state for gtag consent (denied-consent) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -45,8 +58,8 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
 
+      gtag("js", new Date());
       gtag("config", "UA-173981064-1");
     </script>
   </head>
@@ -292,6 +305,21 @@
       </div>
     </footer>
 
+    <!-- Analytics Consent Box -->
+    <section class="consent-box">
+      <p>
+        This website uses data collection to enhance browsing experience. Read
+        this site's <a href="#">privacy policy</a> for more information.
+      </p>
+      <div>
+        <button onclick="consentClickHandler(true)" class="accept-button">
+          Accept
+        </button>
+        <button onclick="consentClickHandler(false)" class="decline-button">
+          Decline
+        </button>
+      </div>
+    </section>
     <script src="js/index.js"></script>
   </body>
 </html>
