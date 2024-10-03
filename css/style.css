@@ -159,9 +159,9 @@ nav label i {
   overflow: hidden;
   white-space: nowrap;
   margin: auto;
-  letter-spacing: 0.15rem;
+  /* letter-spacing: 0.25rem; */
   animation: typing 1.5s steps(20, end);
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .introduction p {
@@ -215,6 +215,12 @@ nav label i {
 .social-list div a {
   text-decoration: none;
   color: var(--clr-dark);
+  transition: transform 0.5s ease;
+}
+
+.social-list div a:hover {
+  transform: rotate(360deg);
+  opacity: 90%;
 }
 
 .desktop-social-list {
@@ -285,8 +291,8 @@ nav label i {
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   gap: 1.25rem;
 }
 
@@ -295,9 +301,10 @@ nav label i {
   border: 1px solid var(--clr-dark);
   color: var(--clr-dark);
   font-size: 1.5rem;
-  padding: 0.25rem 3.5rem;
+  padding: 0.25rem 3rem;
   box-shadow: 0.5rem 0.5rem var(--clr-dark);
   transition: box-shadow 0.3s ease-in-out;
+  max-width: 215px;
 
   position: relative;
   display: flex;
@@ -358,6 +365,137 @@ nav label i {
 
 .button:hover {
   box-shadow: 0 0 var(--clr-dark);
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  max-width: 1280px;
+}
+
+/* About Me */
+.about-me {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-me-header h2 {
+  font-size: 2.75rem;
+  margin-top: 4.25rem;
+  margin-bottom: 1rem;
+}
+
+.to-fade-in {
+  z-index: -2;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.about-me-container img {
+  max-width: 100%;
+  height: 50%;
+  object-fit: fill;
+  box-shadow: 0.5rem 0.5rem var(--clr-dark);
+}
+
+.skill-icons {
+  column-gap: 1rem;
+  row-gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.mobile-skill-icons {
+  display: flex;
+}
+
+.desktop-skill-icons {
+  display: none;
+}
+
+.about-me-container article div p strong {
+  display: block;
+}
+
+.resume-button-container a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Me - Laptop */
+@media (min-width: 1024px) {
+  .about-me {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .about-me-header {
+    text-align: end;
+    min-width: 300px;
+  }
+
+  .about-me-header h2 {
+    font-size: 4.25rem;
+  }
+
+  .about-me-container {
+    text-align: start;
+  }
+
+  .about-me-container img {
+    box-shadow: 1.5rem 1.5rem var(--clr-dark);
+  }
+
+  .about-me-container article {
+    margin-top: 4rem;
+  }
+
+  .about-me-container article h3 {
+    font-size: 2.25rem;
+  }
+
+  .about-me-container article div p {
+    font-size: 1.25rem;
+  }
+
+  .about-me-container article div p strong {
+    display: inline-block;
+    margin-right: 0.75rem;
+  }
+
+  .mobile-skill-icons {
+    display: none;
+  }
+
+  .desktop-skill-icons {
+    display: flex;
+    justify-content: end;
+    font-size: 4rem;
+  }
+
+  .resume-button-container a {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* Circle Animation */

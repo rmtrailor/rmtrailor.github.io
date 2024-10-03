@@ -102,8 +102,8 @@
           <a class="button" href="#">
             <span>Contact</span>
           </a>
-          <a class="button secondary-button" href="#">
-            <span>Resume</span>
+          <a class="button secondary-button" href="#about">
+            <span>Read More</span>
           </a>
         </div>
       </div>
@@ -114,13 +114,13 @@
       <div>
         <span></span>
         <div>
-          <a href="mailto:contact@rubintrailor.com">
+          <a href="mailto:contact@rubintrailor.com" target="_blank">
             <i class="fa-solid fa-envelope"></i>
           </a>
-          <a href="https://www.linkedin.com/in/rmtrailor/">
+          <a href="https://www.linkedin.com/in/rmtrailor/" target="_blank">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="https://github.com/rmtrailor">
+          <a href="https://github.com/rmtrailor" target="_blank">
             <i class="fab fa-github-square"></i>
           </a>
         </div>
@@ -128,11 +128,65 @@
       </div>
     </section>
 
-    <!-- My Skills -->
-    <section class="my-skills" id="skills"></section>
-
-    <!-- About Me -->
-    <section class="about-me" id="about"></section>
+    <main>
+      <!-- About Me -->
+      <div id="about">
+        <section class="about-me">
+          <div class="about-me-header">
+            <h2 class="to-fade-in">About Me</h2>
+            <div class="skill-icons desktop-skill-icons">
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-node-js"></i>
+              <i class="fa-brands fa-java"></i>
+            </div>
+          </div>
+          <div class="about-me-container">
+            <img
+              src="./img/laptop.jpg"
+              alt="Close up view of a person typing on a laptop"
+            />
+            <article>
+              <h3>Full-Stack | Data Driven | Agile Ready</h3>
+              <div class="skill-icons mobile-skill-icons">
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div>
+                <p>
+                  I'm a professional full-stack developer based in the San
+                  Francisco Bay Area. I have experience building enterprise
+                  applications at places such as Salesforce and Auction.com.
+                  I've build dashboards for data visualizations, backend
+                  infrastructures for both microservice and monolith
+                  architectures, and integrations with Generative AI.
+                </p>
+                <p class="skill-list">
+                  <strong><i class="fa-solid fa-display"></i> Frontend:</strong
+                  >React, NextJS, TailwindCSS
+                </p>
+                <p class="skill-list">
+                  <strong><i class="fa-solid fa-server"></i> Backend:</strong
+                  >Node, Express, Java, Spring
+                </p>
+                <p class="skill-list">
+                  <strong
+                    ><i class="fa-solid fa-database"></i> Databases:</strong
+                  >Mongo, PostgreSQL
+                </p>
+              </div>
+              <div class="resume-button-container">
+                <a class="button" href="#">
+                  <span>Resume</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <!-- My Projects -->
     <section class="my-projects" id="projects"></section>
