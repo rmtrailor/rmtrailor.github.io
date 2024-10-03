@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 /* Custom Properties */
 :root {
   --ff-primary: "Source Sans Pro", sans-serif;
@@ -615,6 +619,98 @@ main {
 
   .carousel-slide img {
     max-width: 100%;
+  }
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 4.25rem;
+}
+
+.contact h2 {
+  font-size: 2.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.contact a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .contact h2 {
+    font-size: 4.25rem;
+  }
+
+  .contact p {
+    font-size: 1.25rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+footer {
+  background: #111;
+  background-image: url(../img/golden-gate-bridge.png);
+  background-size: cover;
+  color: var(--clr-light);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+
+.footer-container h2 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+.footer-links li span:hover {
+  color: var(--clr-accent);
+}
+
+.footer-links li a i {
+  margin-right: 0.65rem;
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-container h2 {
+    font-size: 1.25rem;
   }
 }
 
