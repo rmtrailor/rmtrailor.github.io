@@ -148,7 +148,7 @@ nav label i {
   margin-right: auto;
 }
 
-.hero div img {
+.hero .hero-image-container img {
   width: auto;
   height: auto;
   max-width: 340px;
@@ -188,6 +188,39 @@ nav label i {
   }
 }
 
+.social-list {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list span {
+  background-color: var(--clr-accent);
+  height: 1.5px;
+  width: 4rem;
+}
+
+.social-list div {
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.social-list div a {
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+.desktop-social-list {
+  display: none;
+}
+
 /* Hero - Laptop */
 @media (min-width: 1024px) {
   .hero {
@@ -196,7 +229,7 @@ nav label i {
     text-align: left;
   }
 
-  .hero div img {
+  .hero .hero-image-container img {
     max-width: 540px;
   }
 
@@ -216,6 +249,32 @@ nav label i {
   .introduction p {
     margin-left: 0;
     font-size: 1.75rem;
+  }
+
+  .mobile-social-list {
+    display: none;
+  }
+
+  .desktop-social-list {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8rem;
+  }
+
+  .social-list div {
+    font-size: 2.25rem;
+  }
+
+  .social-list span {
+    background-color: var(--clr-dark);
+    height: 1.5px;
+    width: 15rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .social-list {
+    margin-left: 50rem;
   }
 }
 
