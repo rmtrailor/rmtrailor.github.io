@@ -298,6 +298,7 @@ nav label i {
   padding-left: 5rem;
   padding-right: 5rem;
   gap: 1.25rem;
+  align-items: center;
 }
 
 .button {
@@ -309,6 +310,7 @@ nav label i {
   box-shadow: 0.5rem 0.5rem var(--clr-dark);
   transition: box-shadow 0.3s ease-in-out;
   max-width: 215px;
+  min-width: 215px;
 
   position: relative;
   display: flex;
