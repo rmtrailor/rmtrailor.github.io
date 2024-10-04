@@ -786,6 +786,50 @@ footer {
   }
 }
 
+/* Contact Page */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.form-container label input,
+textarea {
+  padding: 0.75rem;
+  width: 100%;
+  border: 1px solid var(--clr-dark);
+  border-radius: 0.25rem;
+}
+
+.form-container button {
+  max-width: 100%;
+  background-color: var(--clr-accent);
+}
+
+@media (min-width: 1024px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  .contact-container h1 {
+    font-size: 4.25rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .contact-container p {
+    text-align: center;
+  }
+
+  .form-container button {
+    max-width: 215px;
+  }
+}
+
 /* Circle Animation */
 /* .button::before {
   clip-path: circle(71% at 50% 50%);
