@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | Rubin Trailor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FontAwesome Kit Script -->
+    <script
+      src="https://kit.fontawesome.com/79d73ab3b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Default state for gtag consent (denied-consent) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+      });
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PPT84JLT');
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PPT84JLT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="thankyou-container">
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="index.html">Rubin Trailor</a>
+          </div>
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="thankyou-content">
+        <main>
+          <section class="thankyou-wrapper">
+            <p>
+              Thank you for reaching out! I will get back to you as soon as I'm
+              available.
+            </p>
+          </section>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+          <div>
+            <h2>Socials</h2>
+            <ul class="footer-links">
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-linkedin"></i><span> LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-github-square"></i><span> Github</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Links</h2>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-house"></i><span> Home</span></a
+                >
+              </li>
+              <li>
+                <a href="projects.html"
+                  ><i class="fa-solid fa-code"></i><span>Projects</span></a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fa-solid fa-address-book"></i
+                  ><span> Contact</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Misc</h2>
+            <ul class="footer-links">
+              <li>
+                <a href="policy.html"><span> Privacy Policy</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Analytics Consent Box -->
+    <section class="consent-box">
+      <p>
+        This website uses data collection to enhance browsing experience. Read
+        this site's <a href="policy.html">privacy policy</a> for more
+        information.
+      </p>
+      <div>
+        <button onclick="consentClickHandler(true)" class="accept-button">
+          Accept
+        </button>
+        <button onclick="consentClickHandler(false)" class="decline-button">
+          Decline
+        </button>
+      </div>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
