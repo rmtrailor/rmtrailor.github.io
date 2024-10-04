@@ -670,7 +670,6 @@ footer {
 
 .footer-container {
   display: grid;
-  g
   gap: 1rem;
   justify-content: space-between;
   max-width: 1280px;
@@ -891,7 +890,7 @@ textarea {
 }
 
 .project-read-more span {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -921,7 +920,7 @@ textarea {
 
 .project-wrapper img {
   width: 100%;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .project-wrapper p {
@@ -958,7 +957,7 @@ textarea {
 }
 
 .technology-icon path {
-  fill: var(--clr-dark)
+  fill: var(--clr-dark);
 }
 
 .project-links {
@@ -994,12 +993,14 @@ textarea {
     align-items: center;
   }
 
-  .project-description h2, .project-technologies h2 {
+  .project-description h2,
+  .project-technologies h2 {
     text-align: start;
     font-size: 4rem;
   }
 
-  .project-description p, .project-technologies p {
+  .project-description p,
+  .project-technologies p {
     font-size: 2.25rem;
   }
 
@@ -1013,7 +1014,8 @@ textarea {
     align-items: center;
   }
 
-  .project-technologies h2, .project-technologies p {
+  .project-technologies h2,
+  .project-technologies p {
     text-align: end;
   }
 
