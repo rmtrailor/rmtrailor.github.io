@@ -151,7 +151,7 @@ document.addEventListener("scroll", (e) => {
     // early return if the user has reduced motion enabled
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     clearInterval(interval);
-    interval = setInterval(next, pause);
+    // interval = setInterval(next, pause);
   }
 
   // Stop the autoplay animation if the user is scrolling through the carousel

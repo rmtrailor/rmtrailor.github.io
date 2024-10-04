@@ -41,25 +41,25 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("consent", "default", {
-        ad_storage: "denied",
-        ad_user_data: "denied",
-        ad_personalization: "denied",
-        analytics_storage: "denied",
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
       });
     </script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
+          dl = l != 'dataLayer' ? '&l=' + l : '';
         j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PPT84JLT");
+      })(window, document, 'script', 'dataLayer', 'GTM-PPT84JLT');
     </script>
     <!-- End Google Tag Manager -->
   </head>
@@ -85,8 +85,8 @@
         </label>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Work</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <!-- <li><a href="#">Work</a></li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -220,7 +220,7 @@
                 Some of these are demo apps to showcase proof of concept
                 applications that I can build.
               </p>
-              <a class="button" href="#">
+              <a class="button" href="projects.html">
                 <span>View Projects</span>
               </a>
             </div>
@@ -228,7 +228,11 @@
           <div id="carousel" class="carousel" role="group">
             <div class="carousel-slides">
               <div class="carousel-slide">
-                <img src="./img/bpl-visual-2.png" alt="" loading="lazy" />
+                <img
+                  src="./img/property-pulse-showcase.png"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <div class="carousel-slide">
                 <img src="./img/message-service.png" alt="" loading="lazy" />
@@ -292,7 +296,7 @@
               >
             </li>
             <li>
-              <a href="#"
+              <a href="projects.html"
                 ><i class="fa-solid fa-code"></i><span>Projects</span></a
               >
             </li>
