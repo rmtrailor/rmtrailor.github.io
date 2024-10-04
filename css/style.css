@@ -1012,6 +1012,56 @@ textarea {
   }
 }
 
+/* Privacy Policy */
+.privacy-wrapper {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.privacy-header h1 {
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+.privacy-text h2 {
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
+
+.privacy-text p {
+  font-size: 1rem;
+}
+
+.privacy-text a {
+  text-decoration: none;
+  color: var(--clr-accent);
+  font-weight: bold;
+}
+
+.privacy-text a:hover {
+  border-bottom: 2px solid var(--clr-accent);
+}
+
+@media (min-width: 1024px) {
+  .privacy-wrapper {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .privacy-header h1 {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  .privacy-text h2 {
+    font-size: 2rem;
+  }
+
+  .privacy-text p {
+    font-size: 1.5rem;
+  }
+}
+
 /* Circle Animation */
 /* .button::before {
   clip-path: circle(71% at 50% 50%);
