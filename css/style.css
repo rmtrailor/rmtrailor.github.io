@@ -832,6 +832,22 @@ textarea {
   }
 }
 
+/* Thank You */
+.thankyou-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.thankyou-content {
+  flex-grow: 1;
+}
+
+.thankyou-wrapper {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
 /* Projects */
 .projects-container {
   display: flex;
