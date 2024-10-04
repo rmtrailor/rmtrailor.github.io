@@ -17,8 +17,8 @@ html {
 
 /* Custom Properties */
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --ff-secondary: 'Source Code Pro', monospace;
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
   --fw-reg: 300;
   --fw-bold: 900;
   --clr-light: #fff;
@@ -324,7 +324,7 @@ nav label i {
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -414,7 +414,7 @@ main {
 
 .about-me-container img {
   max-width: 100%;
-  height: 50%;
+  max-height: 200px;
   object-fit: fill;
   box-shadow: 0.5rem 0.5rem var(--clr-dark);
 }
@@ -470,6 +470,7 @@ main {
 
   .about-me-container img {
     width: 90%;
+    max-height: 100%;
     box-shadow: 1.5rem 1.5rem var(--clr-dark);
   }
 
